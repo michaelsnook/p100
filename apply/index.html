@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>P100</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/css/p100.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="thankyou" tabindex="-1" role="dialog" aria-labelledby="Thank you!" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Thank you!</h4>
+        </div>
+        <div class="modal-body">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="Thank you!" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Contact Us about P100</h4>
+        </div>
+        <div class="modal-body">
+			<p>Want to host a training session?  Want to get in touch with P100 graduates?  Have another question?  Feel free to contact us here.</p>
+			
+			
+			<form class="ak-form" name="act" id="p100_contact" method="POST" action="javascript:submitForm('p100_contact','p100_contact');" accept-charset="utf-8">
+	<!-- begin user_form_wrapper.html -->
+
+			<ul class="compact" class="ak-errors" style="display:none"></ul>
+			<div id="unknown_user" class="user-form ak-labels-overlaid ak-errs-below">
+					
+		<div class="row">
+		<div class="col-lg-6">
+		<label for="first_name" class="sr-only">First Name</label>
+    <input type="text" class="form-control" name="first_name" id="id_first_name" placeholder="first name" />
+  </div>
+  <div class="col-lg-6">
+	  <label for="last_name" class="sr-only">Last Name</label>
+    <input type="text" class="form-control" name="last_name" id="id_last_name" placeholder="last name" />
+  </div>
+		</div>
+		
+		<div class="row">
+
+  <div class="col-lg-8">
+  <label for="email" class="sr-only">Email</label>
+   <input type="text" class="form-control" name="email" class="required" id="email" placeholder="e-mail address" />
+  </div>
+ 
+   <div class="col-lg-4">
+   <label for="zip" class="sr-only">Zipcode</label>
+	  <input type="text" class="form-control" name="zip" class="required" id="zip" placeholder="zip code" />
+  </div>
+		</div>
+		<div class="row">
+  
+     <div class="col-lg-12">
+     <label for="action_contact_type">Why would you like to contact us?</label>
+	  <select name="action_contact_type"  class="required form-control">
+	  	<option value="general">I have a general inquiry</option>
+	  	<option value="host">I would like to host a training.</option>
+	  	<option value="hire-grad">I would like to hire a graduate.</option>
+	  </select>
+  </div>
+  
+  <div class="col-lg-12">
+	   <label for="action_contact_detail">Tell us a little more:</label>
+	  <textarea class="form-control required" name="action_contact_detail" rows="4"></textarea>
+  </div>
+  
+ <input type="hidden" name="country" value="United States" />
+		<input type="hidden" name="page" class="page" value="p100_contact" />
+  
+</div>		</div>
+
+			
+			
+        </div>
+        <div class="modal-footer">
+		
+
+         <button type="submit" class="submit cf btn take-action btn-primary" >Contact</button>
+
+		
+
+		</form>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  
+  
+   <nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+ <div class="container">
+ <div class="row">
+ <div class="col-lg-10 col-lg-offset-1">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-nav ul">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand pull-left" href="/"><img class="logo" src="/img/p100-logo.png" alt="P100 Logo"/><h1 class="sr-only">P100</h1></a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div id="header-nav" class="navbar-collapse">
+    <ul class="nav navbar-nav pull-right collapse">
+                     <li><a href="/about/">About</a>
+                     <li><a href="/apply/">Apply</a></li>
+                     <li><a href="/trainings/">Trainings</a>
+                     <li><a href="#contact" data-toggle="modal" data-type="general">Contact</a></li>
+           <li><a href="https://secure.actblue.com/contribute/page/pccc_main?refcode=website-typ-p100_app" target="_blank">Donate</a></li>
+   </ul>
+  </div><!-- /.navbar-collapse -->
+ </div></div></div>
+    </nav>
+    
+  
+    
+    
+<div id="apply" class="content_area">
+    <div class="container">
+		
+      <!-- Main hero unit for a primary marketing message or call to action -->
+       <div class="row">
+      	<div class="col-lg-10 col-lg-offset-1">
+      	
+  <div class="pull-right"><a href="#contact" data-toggle="modal" data-type="host" class="host btn btn-primary btn-large">Want to host a training?</a></div>
+     
+      	</div>
+      </div>
+      <div class="row">
+      	<div class="col-lg-10 col-lg-offset-1">
+
+      	<div id="content_card">
+      	
+      	  <!-- end header-->
+	
+	<div id="apply_form">
+	
+	<h1>Apply to the P100 Program</h1>
+	
+	<h2>Do you have what it takes?</h2>
+	<ul>
+	<li>Are you a bold progressive? </li>
+	<li>Do you want to learn more about fundraising for progressive candidates?</li>
+	<li>Are you committed to working for a progressive candidate this cycle? </li>
+	<li>Apply using this form!</li>
+	</ul>
+
+<h2>How does it work?</h2>
+
+<p>PCCC staff will review all applications and the most qualified applicants will be contacted for a follow up interview. The 25 finalists will be notified no later than three weeks prior to the training. Apply as soon as possible -- the final deadline is [UPDATE ME]. After the training, we'll work to place you on a progressive campaign so you can put your skills to work.</p>
+
+<p>Limited travel scholarships are available to those in need. </p>
+
+<p>Apply now by filling out the form to the right. Answer each question in 250 words or less. You'll be prompted to upload a resume once you hit submit.</p>
+
+<p>If you can't make any of these sessions you can still sign up for updates to learn about future training announcements by selecting ""Interested in Future Sessions" below.</p>
+	
+<h2>Application</h2>
+	
+		<form class="ak-form" name="act" id="p100_applicant" method="POST" action="javascript:submitForm('p100_applicant', 'p100_app');" accept-charset="utf-8">
+	<!-- begin user_form_wrapper.html -->
+
+<div class="row">
+
+<div class="col-lg-6 col-md-6">
+
+			<ul class="compact" class="ak-errors" style="display:none"></ul>
+			<div id="unknown_user" class="user-form ak-labels-overlaid ak-errs-below">
+					
+		<div class="row">
+  <div class="col-lg-12 col-md-12">
+    <input type="text" class="form-control" name="first_name" id="id_first_name" placeholder="first name" />
+  </div>
+		</div>
+		<div class="row">
+  <div class="col-lg-12 col-md-12">
+    <input type="text" class="form-control" name="last_name" id="id_last_name" placeholder="last name" />
+  </div>
+		</div>
+  
+  <div class="row">
+  <div class="col-lg-6 col-md-6">
+	  <input type="text" class="form-control" name="phone" class="phone" id="id_phone" placeholder="phone" />
+  </div>
+  
+  <div class="col-lg-6 col-md-6">
+	  <input type="text" class="form-control" name="zip" class="required" id="zip" placeholder="zip code" />
+  </div>
+  </div>
+  
+  <div class="row">
+  <div class="col-lg-12 col-md-12">
+   <input type="text" class="form-control" name="email" class="required" id="email" placeholder="e-mail address" />
+  </div>
+  
+</div>		</div>
+
+</div>
+		<div id="survey-questions" class="col-lg-6 col-md-6">		
+			
+				<p>Which Sessions would you like to apply for?</p>
+				
+				
+					<div class="session">
+					
+					<label for="id_wi_sept_fin">
+					<input type="checkbox" class="vis-hidden" name="action_session" id="id_wi_sept_fin" value="wi_sept_fin" />
+							<div class="training_info">
+							<p class="training_date">Sept. 28-29, 2013</p>
+							<p class="training_location">Wisconsin</p>
+							<p class="training_type">Finance Training</p>
+							</div>
+
+					</label>
+					</div>
+					
+					<div class="session">
+						<label for="id_ky_oct_field">
+						<input type="checkbox" class="vis-hidden" name="action_session" id="id_ky_oct_field" value="ky_oct_field" />										<div class="training_info">
+							<p class="training_date">Oct. 5-6, 2013</p>
+							<p class="training_location">Kentucky</p>
+							<p class="training_type">Field Training</p>
+							</label>
+							</div>
+					</div>
+						
+					<div class="session">
+					<label for="id_nc_oct_field">							
+					<input type="checkbox" class="vis-hidden" name="action_session" id="id_nc_oct_field" value="nc_oct_field" />
+						<div class="training_info">
+						<p class="training_date">Oct. 26-27, 2013</p>
+						<p class="training_location">North Carolina </p>
+						<p class="training_type">Field Training</p>
+						</div>
+					</label>
+					
+					</div>
+					<div class="session">
+					
+					
+					<label for="id_nh_nov_field">
+					<input type="checkbox" class="vis-hidden" name="action_session" id="id_nh_nov_field" value="nh_nov_field" />										<div class="training_info">
+						<p class="training_date">Nov. 16-17, 2013</p>
+						<p class="training_location">New Hampshire</p>
+						<p class="training_type">Field Training</p>
+					</div>
+					</label>
+								
+								</div>
+					<div class="session">
+					
+										
+					<label for="id_tx_nov_field">
+					<input type="checkbox" class="vis-hidden" name="action_session" id="id_tx_nov_field" value="tx_nov_field" />									<div class="training_info">
+						<p class="training_date">Nov. 16-17, 2013</p>
+						<p class="training_location">Texas</p>
+						<p class="training_type">Field Training</p>
+					</div>
+					</label>
+									
+					</div>
+					<div class="session">
+					
+					
+					
+					<label for="id_ky_nov_fin">			
+					<input type="checkbox" class="vis-hidden" name="action_session" id="id_ky_nov_fin" value="ky_nov_fin" />		
+					<div class="training_info">		
+						<p class="training_date">Nov. 23-24, 2013</p>
+						<p class="training_location">Kentucky</p>
+						<p class="training_type">Finance Training</p>
+					</div>
+					</label>
+							
+					</div>
+					<div class="session">
+							
+								
+					
+					
+					<label for="id_wi_dec_field">							
+					<input type="checkbox" class="vis-hidden" name="action_session" id="id_wi_dec_field" value="wi_dec_field" />
+						<div class="training_info">
+						<p class="training_date">Dec. 7-8, 2013</p>
+						<p class="training_location">Wisconsin</p>
+						<p class="training_type">Field Training</p>
+						</div>
+					</label>
+					</div>
+					<div class="session">
+					<label for="id_nc_dec_fin">		
+					
+					<input type="checkbox" class="vis-hidden" name="action_session" id="id_nc_dec_fin" value="nc_dec_fin" />					
+						
+						<div class="training_info">
+							<p class="training_date">Dec. 14-15, 2013</p>
+						<p class="training_location">North Carolina</p>
+						<p class="training_type">Finance Training</p>	
+						</div>				
+					</label>
+									
+					</div>
+					<div class="session">
+					
+					
+					<label for="id_dc_jan_field">	
+					<input type="checkbox" class="vis-hidden" name="action_session" id="id_dc_jan_field" value="dc_jan_field" />										<div class="training_info">
+						<p class="training_date">Jan. 4-5, 2014</p>
+						<p class="training_location">Washington, DC</p>
+						<p class="training_type">Field Training</p>
+					</div>
+					</label>
+					
+					</div>
+					<div class="session">
+					
+					
+					<label for="id_recieve_updates">	
+					<input type="checkbox" class="vis-hidden" name="action_session" id="id_recieve_updates" value="recieve_updates" />								<div class="training_info">
+						<p class="future_session">Interested in Future Sessions</p>
+					</div>						
+					</label>
+					</div>
+					
+					
+			</div>
+			
+		</div></div>
+		
+		
+	
+			<div class="row">
+	
+	<div class="col-lg-12">			
+		<p class="appllication_note">Answer each question in 250 words or less.</p>
+	</div>
+			</div>
+			<div class="row">
+	
+			<div class="col-md-6 col-lg-6">	
+			
+			
+				<p>What makes a candidate a "bold progressive" in your mind?</p>
+				<textarea rows="5" class="form-control" name="action_candidate_bp"></textarea>
+			</div>
+			
+			<div class="col-md-6 col-lg-6">
+			
+			<p>What is your proudest moment as an organizer or activist?</p>
+			<textarea rows="5" class="form-control" name="action_proudest"></textarea>
+			</div>
+			
+				<div class="col-md-6 col-lg-6">
+	<div class="checkbox">		
+	<input type="checkbox" name="action_fundraising" value="true" />
+  I have previous fundraising experience (not necessarily with a campaign)<br />
+  
+  <input type="checkbox" name="action_geog_flex" value="true" />
+  I'm willing to work on campaigns in different parts of the country<br />
+	</div>
+				</div>
+				
+			<div class="col-md-6 col-lg-6">
+			<p>(Optional) Anything else we should know about you?</p>
+			<textarea rows="5" class="form-control" name="action_other_info"></textarea>
+			</div>
+	
+			</div>
+			<div class="row">
+			<div class="col-lg-12">
+			<input type="hidden" name="country" value="United States" />
+			<input type="hidden" name="page" class="page" value="p100_app" />
+		
+    	<button type="submit" class="submit cf btn btn-primary" >Apply Now</button>
+			</div></div>
+
+		
+    	</div>
+    	
+	
+
+	</form>
+	</div><!-- end apply form-->
+     </div>
+        
+      	</div>
+      </div>
+    </div>
+
+<!-- footer -->
+      <footer>
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-offset-1 col-lg-10">
+              
+                
+                <div class="row">
+                
+                <div class="col-lg-4 col-md-4">
+                   <nav role="navigation">
+                   	<ul>
+	                   <li><a href="/about/">About</a>
+                     <li><a href="/apply/">Apply</a></li>
+                     <li><a href="/trainings/">Trainings</a>
+                     
+                     <li><a href="#contact" data-toggle="modal" data-type="general">Contact</a></li>
+                     <li><a href="#contact" data-toggle="modal" data-type="host">Host</a></li>
+           <li><a href="https://secure.actblue.com/contribute/page/pccc_main?refcode=website-typ-p100_app" target="_blank">Donate</a></li>
+                   	</ul>
+                   
+                   </nav>
+                </div>
+                
+                <div class="col-lg-8 col-md-8">
+       
+        <h3>About P100 and PCCC</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+        </div>
+                </div>
+        
+        <div class="row">
+	        <div class="disclaimer">
+                    <p>Paid for by the Progressive Change Campaign Committee PAC (BoldProgressives.org) and not authorized by any candidate or candidate's committee. Contributions to the PCCC are not deductible as charitable contributions for federal income tax purposes.</p>
+                </div>
+        </div>
+        
+        </div>
+        
+        
+        </div>
+      </div>
+      </footer>
+
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/pccc-ak-async-post.js"></script>
+    <script src="/js/forms.js"></script>
+    
+    
+    
+  </body>
+</html>
