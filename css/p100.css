@@ -11,28 +11,13 @@
   border: 0;
 }
 
-::-webkit-input-placeholder {
-   color: #333 !important;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-  color: #333 !important;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #333 !important;  
-}
-
-:-ms-input-placeholder {  
-   color: #333 !important; 
-}
 
 body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
 margin-right: 0;
 }
 
 .form-control{
-	background: #eee;
+	background: #fff;
 	color: #000;
 	padding: 20px;
 	margin-right: 5px;
