@@ -144,4 +144,19 @@ validators = {};
     return valid;
   
   }
+  
+ 
+ $("input").each(function(){
+    var origValue = $(this).val(); // Store the original value
+    $(this).focus(function(){
+        if($(this).val() == origValue) {
+            $(this).val('');
+        }
+    });
+    $(this).blur(function(){
+        if($(this).val() == '') {
+            $(this).val(origValue);
+        }
+    });
+});
  
