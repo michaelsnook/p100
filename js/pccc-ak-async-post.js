@@ -30,8 +30,8 @@
         window.PCCCAKASYNCeventListenerAdded = true;
       }
 
-      function submitActionkitForm(pageName, data, callback) {
-        $("<iframe />").attr("id", "crossdomain").hide().appendTo("body");
+	  function submitActionkitForm(pageName, data, callback) { 
+	  $("<iframe />").attr("id", "crossdomain").attr("name", "crossdomain").hide().appendTo("body");
         var form = $("<form />").attr("method", "POST")
                                 .attr("target", "crossdomain")
                                 .hide().appendTo("body");
