@@ -11,6 +11,10 @@
   border: 0;
 }
 
+input::-moz-placeholder {
+  color: #333;
+}
+
 body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
 margin-right: 0;
 }

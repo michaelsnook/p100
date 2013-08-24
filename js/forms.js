@@ -146,7 +146,3 @@ validators = {};
   }
   
   
- $(document).ready(function() {
-	$('input').clearField();
-});
- 
