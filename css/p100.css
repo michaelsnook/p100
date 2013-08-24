@@ -17,9 +17,9 @@ margin-right: 0;
 }
 
 .form-control{
-	background: #fff;
+	background: #eee;
 	color: #000;
-	padding: 20px;
+	height: 46px;
 	margin-right: 5px;
 }
 
