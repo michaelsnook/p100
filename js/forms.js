@@ -17,6 +17,56 @@ $.fn.serializeObject = function()
    return o;
 };
 
+
+window.getArgs = function() {
+
+var argsStr = window.location.search;
+
+var pairs = argsStr.replace(/^\?/, '').split('&');
+
+var args = {};
+
+unesc = unescape;
+
+if ( typeof(decodeURIComponent) != 'undefined' )
+
+unesc = decodeURIComponent;
+
+for ( var i = 0; i < pairs.length; ++i ) {
+
+pair = pairs[i].split('=');
+
+if (pair[0]) {
+
+if (pair[1])
+
+pair[1] = unesc(pair[1].replace(/\+/g, ' '));
+
+args[unesc(pair[0].replace(/\+/g, ' '))] = pair[1];
+
+}
+
+}
+
+return args;
+
+};
+
+
+$('form').each(function(){
+	var args = getArgs();
+	
+	for(arg in args){
+		$(this).append('<input type="hidden" name="'+arg+'" value="'+args[arg]+'" />');
+		console.log('<input type="hidden" name="'+arg+'" value="'+args[arg]+'" />');
+	}
+	
+});
+
+
+//append inputs named "source" "mailing_id" and "action_referrer" with the values args.source, args.mailing_id, document.referrer
+
+
 function getQueryVariable(string, variable){
        var query = string.substring(1);
        var vars = query.split("&");
