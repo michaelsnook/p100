@@ -58,14 +58,10 @@ $('form').each(function(){
 	
 	for(arg in args){
 		$(this).append('<input type="hidden" name="'+arg+'" value="'+args[arg]+'" />');
-		console.log('<input type="hidden" name="'+arg+'" value="'+args[arg]+'" />');
+		
 	}
 	
 });
-
-
-//append inputs named "source" "mailing_id" and "action_referrer" with the values args.source, args.mailing_id, document.referrer
-
 
 function getQueryVariable(string, variable){
        var query = string.substring(1);
