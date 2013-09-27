@@ -479,13 +479,13 @@ footer a:link{
 
 .thumbnail {
 	position: relative;  
-    float: left;
-    cursor: pointer;  
+    float: left; 
     width:100%;
 }  
   
 
 .thumbnail blockquote {  
+cursor: pointer; 
     content: "";  
 	margin: 10px;
 	background: rgba(0,0,0, 0.5);  
