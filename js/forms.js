@@ -124,7 +124,7 @@ function handleActionkitSuccess(form) {
 
 		
 		console.log(form);
-		if(form.indexOf('p100_app') > -1){
+		/*if(form.indexOf('p100_app') > -1){
 			var akid = getQueryVariable(form, 'akid').substring(1).split('.')[0];
 			console.log('this was an application form');
 			var resume = '	<div id="resume_upload_form" style="display:none"><p>Thanks for applying!  Would you like to upload your resume?</p><form id="resume_up"><input id="input_akid" type="hidden" name="akid" value="'+akid+'" /><input type="hidden" name="redirect" value="0" /><p><input type="file" name="resume" size="40" /></p><p><input class="submit button btn action" type="submit">Upload Resume</button></p></form></div><!-- end resume upload form -->';
@@ -132,7 +132,7 @@ function handleActionkitSuccess(form) {
 		$("#resume_upload_form").fadeIn();
 		$("#thankyou").modal();
 		$("#thankyou").modal('show');	
-		} else {
+		} else {*/
 		$('.modal').modal('hide');
 	
 		/*Thank you message */
@@ -141,7 +141,7 @@ function handleActionkitSuccess(form) {
 		$("#thankyou").modal();
 		$("#thankyou").modal('show');
 		    
-		}
+	/*	}*/
 		
 
 		
