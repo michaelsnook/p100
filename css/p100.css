@@ -261,7 +261,7 @@ img.logo{
 
 .training_location, .training_date, a .training_location, a .training_date{
 margin-bottom: 0px;
-color: inherit;
+color: #333;
 }
 
 #upcoming h4, a .training_date{
