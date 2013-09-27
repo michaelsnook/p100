@@ -109,21 +109,27 @@ background: #052B47;
 }
 
 #trainings {
-	background-image: url(../img/p100site_image1.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-image: url(../img/p100site_image1.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 
 #about_p100 {
-	background-image: url(../img/p100site_image4.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-image: url(../img/p100site_image4.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 
 #apply {
-	background-image: url(../img/p100site_image5.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-image: url(../img/p100site_image5.jpg)no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 
 #trainings h4{
