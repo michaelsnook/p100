@@ -130,7 +130,8 @@ function handleActionkitSuccess(form) {
 			var resume = '	<div id="resume_upload_form" style="display:none"><p>Thanks for applying!  Would you like to upload your resume?</p><form action="http://boldprogressives.org/resume_upload.php" method="post" enctype="multipart/form-data"><input id="input_akid" type="hidden" name="akid" value="'+akid+'" /><input type="hidden" name="redirect" value="0" /><p><input type="file" name="resume" size="40" /></p><p><input class="submit button" type="submit" value="upload resume" /></p></form></div><!-- end resume upload form -->';
 		$("#thankyou .modal-body").html(resume);
 		$("#resume_upload_form").fadeIn();
-			
+		$("#thankyou").modal();
+		$("#thankyou").modal('show');	
 		} else {
 		$('.modal').modal('hide');
 	
