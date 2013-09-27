@@ -125,20 +125,20 @@ function handleActionkitSuccess(form) {
 		if(form.indexOf('p100_app') > -1){
 			
 			console.log('this was an application form');
+			var resume = '	<div id="resume_upload_form" style="display:none"><p>Thanks for applying!  Would you like to upload your resume?</p><form action="http://boldprogressives.org/resume_upload.php" method="post" enctype="multipart/form-data"><input id="input_akid" type="hidden" name="akid" value="'+akid+'" /><input type="hidden" name="redirect" value="0" /><p><input type="file" name="resume" size="40" /></p><p><input class="submit button" type="submit" value="upload resume" /></p></form></div><!-- end resume upload form -->';
+		$("#thankyou .modal-body").html(resume);
+		$("#resume_upload_form").fadeIn();
 			
-		}
+		} else {
 		$('.modal').modal('hide');
 	
 		/*Thank you message */
 		var thanks = '<p>Thank you.  You should recieve an email confirmation shortly.</p>'
-		$("#thankyou .modal-body").append(thanks);
+		$("#thankyou .modal-body").html(thanks);
 		$("#thankyou").modal();
 		$("#thankyou").modal('show');
 		    
-      /*    var resume = '	<div id="resume_upload_form" style="display:none"><p>Thanks for applying!  Would you like to upload your resume?</p><form action="http://boldprogressives.org/resume_upload.php" method="post" enctype="multipart/form-data"><input id="input_akid" type="hidden" name="akid" value="'+akid+'" /><input type="hidden" name="redirect" value="0" /><p><input type="file" name="resume" size="40" /></p><p><input class="submit button" type="submit" value="upload resume" /></p></form></div><!-- end resume upload form -->';
-		$('#apply_form').parent().prepend(resume);
-		$("#resume_upload_form").fadeIn();
-		$('#apply_form').fadeOut();*/
+		}
 		
 		
 };
