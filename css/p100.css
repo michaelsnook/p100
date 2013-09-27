@@ -264,6 +264,10 @@ margin-bottom: 0px;
 color: #333;
 }
 
+a .training_type{
+	color: #333;
+}
+
 #upcoming h4, a .training_date{
 	color: #1a86ab;
 	font-size: 16px;
