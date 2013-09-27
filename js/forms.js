@@ -123,7 +123,7 @@ function handleActionkitError(errors) {
 function handleActionkitSuccess(form) {
 
 		
-		console.log(form);
+		//console.log(form);
 		/*if(form.indexOf('p100_app') > -1){
 			var akid = getQueryVariable(form, 'akid').substring(1).split('.')[0];
 			console.log('this was an application form');
