@@ -259,11 +259,12 @@ img.logo{
 }
 
 
-.training_location, .training_date{
+.training_location, .training_date, a .training_location, a .training_date{
 margin-bottom: 0px;
+color: inherit;
 }
 
-#upcoming h4{
+#upcoming h4, a .training_date{
 	color: #1a86ab;
 	font-size: 16px;
 }
