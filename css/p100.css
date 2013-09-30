@@ -379,6 +379,8 @@ footer a:link{
 
 
 .form-control {
+background: #F8F8F8;
+color: #000;
 	border-radius: 0;
 	margin: 10px 0;
 }
