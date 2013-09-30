@@ -149,7 +149,7 @@ $(document).on('submit','#resume_up',function(e){
 		e.preventDefault();
 		$.post("http://boldprogressives.org/resume_upload.php", $(this).serializeObject(), function(){
 				$('#resume_upload_form').fadeOut();
-				var upload_confirm('<span id="upload_confirm" style="display:none">Thanks! Your resume uploaded successfully!</span>');
+				var upload_confirm = '<span id="upload_confirm" style="display:none">Thanks! Your resume uploaded successfully!</span>';
 				$("#thankyou .modal-body").html(upload_confirm);
 				upload_confirm.fadeIn();
 		});
