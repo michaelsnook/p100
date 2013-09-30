@@ -114,7 +114,7 @@ background: #052B47;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-box-shadow: inset 0 20px 20px -20px #333;
+box-shadow: inset 0 20px 20px -20px rgba(20,20,20,0.3);
 }
 
 #about_p100 {
@@ -123,7 +123,7 @@ box-shadow: inset 0 20px 20px -20px #333;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-box-shadow: inset 0 20px 20px -20px #333;
+box-shadow: inset 0 20px 20px -20px rgba(20,20,20,0.3);
 }
 
 #apply {
@@ -132,7 +132,7 @@ box-shadow: inset 0 20px 20px -20px #333;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-box-shadow: inset 0 20px 20px -20px #333;
+box-shadow: inset 0 20px 20px -20px rgba(20,20,20,0.3);
 }
 
 #trainings h4{
