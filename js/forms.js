@@ -123,10 +123,8 @@ function handleActionkitError(errors) {
 function handleActionkitSuccess(form) {
 
 		
-		console.log(form);
 		if(form.indexOf('p100_app') > -1){
 			var akid = getQueryVariable(form, 'akid').substring(1).split('.')[0];
-			console.log('this was an application form');
 			var resume = '	<div id="resume_upload_form" style="display:none"><p>Thanks for applying!  Would you like to upload your resume?</p><form id="resume_up"><input id="input_akid" type="hidden" name="akid" value="'+akid+'" /><input type="hidden" name="redirect" value="0" /><p><input type="file" name="resume" size="40" /></p><p><button class="btn action" type="submit">Upload Resume</button></p></form></div><!-- end resume upload form -->';
 		$("#thankyou .modal-body").html(resume);
 		$("#resume_upload_form").fadeIn();
@@ -149,12 +147,14 @@ function handleActionkitSuccess(form) {
 
 $(document).on('submit','#resume_up',function(e){
 		e.preventDefault();
-		console.log('hello');
-		
 		$.post("http://boldprogressives.org/resume_upload.php", $(this).serializeObject(), function(){
 				$('#resume_upload_form').fadeOut();
-				$("#thankyou .modal-body").html('Thanks! Your resume uploaded successfully!');
+				var upload_confirm('<span id="upload_confirm" style=
+				"display:none">Thanks! Your resume uploaded successfully!</span>');
+				$("#thankyou .modal-body").html(upload_confirm);
+				upload_confirm.fadeIn();
 		});
+		
 		
 		return false;
 });
