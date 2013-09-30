@@ -183,9 +183,9 @@ margin: 0;
 .btn.host{
 	font-weight: 300;
 	font-size: 1.2em;
-	-moz-box-shadow:    2px 2px 5px rgba(20,20,20,0.5);
-  -webkit-box-shadow:  2px 2px 5px rgba(20,20,20,0.5);
-  box-shadow:          2px 2px 5px rgba(20,20,20,0.5);
+-moz-box-shadow: 2px 2px 5px rgba(20,20,20,0.3);
+-webkit-box-shadow: 2px 2px 5px rgba(20,20,20,0.3);
+box-shadow: 2px 2px 5px rgba(20,20,20,0.3);
 }
 
 #hero{
