@@ -232,8 +232,7 @@ img.logo{
 
 .btn{
 	border-radius: 0;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 10px 20px;
 	border: 0;
 	
 }
