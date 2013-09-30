@@ -132,7 +132,7 @@ function handleActionkitSuccess(form) {
 		$("#resume_upload_form").fadeIn();
 		$("#thankyou").modal();
 		$("#thankyou").modal('show');	
-		} else {*/
+		} else {
 		$('.modal').modal('hide');
 	
 		/*Thank you message */
