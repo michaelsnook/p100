@@ -356,6 +356,7 @@ blockquote footer{
 }
 
 footer {
+padding-top: 30px;
 	color: #fff;
 	background: #052B47;
 }
