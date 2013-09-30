@@ -147,7 +147,7 @@ function handleActionkitSuccess(form) {
 		
 };
 
-$('#resume_up').on('submit',function(e){
+$(document).on('submit','#resume_up',function(e){
 		e.preventDefault();
 		console.log('hello');
 		
