@@ -149,11 +149,12 @@ function handleActionkitSuccess(form) {
 
 $('#resume_up').submit(function(){
 		console.log('hello');
+		
+		return false;
 		$.post("http://boldprogressives.org/resume_upload.php", $(this).serializeObject(), function(){
 				$('#resume_upload_form').fadeOut();
 				$("#thankyou .modal-body").html('Thanks! Your resume uploaded successfully!');
 		});
-		return false;
 });
 
 $('input[type="radio"] + label, input[type="radio"]').addClass('radio');
