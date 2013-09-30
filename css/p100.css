@@ -420,7 +420,14 @@ footer a:link{
 	right: 1px;
 }
 					
+.modal-backdrop.in {
+opacity: 0.5;
+filter: alpha(opacity=50);
+}
 
+.modal-content {
+border-radius: 0;
+}
 
 #hero #upcoming{
 	margin-top: 20px;
