@@ -151,11 +151,12 @@ $(document).on('submit','#resume_up',function(e){
 		e.preventDefault();
 		console.log('hello');
 		
-		return false;
 		$.post("http://boldprogressives.org/resume_upload.php", $(this).serializeObject(), function(){
 				$('#resume_upload_form').fadeOut();
 				$("#thankyou .modal-body").html('Thanks! Your resume uploaded successfully!');
 		});
+		
+		return false;
 });
 
 $('input[type="radio"] + label, input[type="radio"]').addClass('radio');
