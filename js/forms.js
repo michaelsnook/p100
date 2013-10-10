@@ -152,7 +152,7 @@ $('#resume_up').ajaxForm({
         console.log('awesome');
     },
 	complete: function(xhr) {
-		status.html(xhr.responseText);
+		console.log(xhr.responseText);
 	}
 	}); 
 
