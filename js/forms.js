@@ -143,7 +143,7 @@ function handleActionkitSuccess(form) {
 		
 };
 
-$(document).ajaxForm(ajaxForm, '#resume_up', function() { 
+$('#resume_up').ajaxForm(function() { 
                 console.log("Thank you for your comment!"); 
             }); 
 
