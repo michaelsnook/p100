@@ -154,6 +154,7 @@ $('#resume_up').ajaxForm({
     },
 	complete: function(xhr) {
 		status.html(xhr.responseText);
+	}
 	}); 
 
 /*
