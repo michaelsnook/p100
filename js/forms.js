@@ -125,8 +125,6 @@ function handleActionkitSuccess(form) {
 		
 		if(form.indexOf('p100_app') > -1){
 			var akid = getQueryVariable(form, 'akid').substring(1).split('.')[0];
-			var resume = '	<div id="resume_upload_form" style="display:none"><p>Thanks for applying!  Would you like to upload your resume?</p><form id="resume_up" action="http://boldprogressives.org/resume_upload.php" method="POST" enctype="multipart/form-data"><input id="input_akid" type="hidden" name="akid" value="'+akid+'" /><input type="hidden" name="redirect" value="0" /><p><input type="file" name="resume" size="40" /></p><p><button class="btn action" type="submit">Upload Resume</button></p></form></div><!-- end resume upload form -->';
-		$("#thankyou .modal-body").html(resume);
 		$("#resume_upload_form").fadeIn();
 		$("#thankyou").modal();
 		$("#thankyou").modal('show');	
