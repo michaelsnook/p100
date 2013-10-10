@@ -145,6 +145,10 @@ function handleActionkitSuccess(form) {
 		
 };
 
+$('#resume_up').ajaxForm(function() { 
+                console.log("Thank you for your comment!"); 
+            }); 
+
 /*
 $(document).on(ajaxForm, '#resume_up', function() { 
                 console.log("Thank you!"); 
@@ -152,7 +156,7 @@ $(document).on(ajaxForm, '#resume_up', function() {
 		status.html(xhr.responseText);
 	}
             }); 
-*/
+
 $(document).on('submit','#resume_up',function(e){
 		e.preventDefault();
 		$.post("http://boldprogressives.org/resume_upload.php", $(this).serializeObject(), function(){
@@ -164,7 +168,7 @@ $(document).on('submit','#resume_up',function(e){
 		
 		
 		return false;
-});
+});*/
 
 $('input[type="radio"] + label, input[type="radio"]').addClass('radio');
 
