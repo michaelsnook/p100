@@ -156,19 +156,19 @@ $(document).on(ajaxForm, '#resume_up', function() {
 		status.html(xhr.responseText);
 	}
             }); 
-
+*/
 $(document).on('submit','#resume_up',function(e){
 		e.preventDefault();
-		$.post("http://boldprogressives.org/resume_upload.php", $(this).serializeObject(), function(){
+		/*$.post("http://boldprogressives.org/resume_upload.php", $(this).serializeObject(), function(){
 				$('#resume_upload_form').fadeOut();
 				var upload_confirm = '<span id="upload_confirm" style="display:none">Thanks! Your resume uploaded successfully!</span>';
 				$("#thankyou .modal-body").html(upload_confirm);
 				$('#thankyou .modal-body').children().fadeIn();
 		});
-		
+		*/
 		
 		return false;
-});*/
+});
 
 $('input[type="radio"] + label, input[type="radio"]').addClass('radio');
 
