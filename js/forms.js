@@ -125,6 +125,7 @@ function handleActionkitSuccess(form) {
 		
 		if(form.indexOf('p100_app') > -1){
 			var akid = getQueryVariable(form, 'akid').substring(1).split('.')[0];
+			$('#input_akid').val(akid);
 		$("#resume_upload_form").fadeIn();
 		$("#thankyou").modal();
 		$("#thankyou").modal('show');	
