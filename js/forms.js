@@ -144,9 +144,17 @@ function handleActionkitSuccess(form) {
 		
 };
 
-$('#resume_up').ajaxForm(function() { 
-                console.log("Thank you for your comment!"); 
-            }); 
+$('#resume_up').ajaxForm({
+    beforeSend: function() {
+        status.empty();
+        
+    },
+    success: function() {
+        console.log('awesome');
+    },
+	complete: function(xhr) {
+		status.html(xhr.responseText);
+	}); 
 
 /*
 $(document).on(ajaxForm, '#resume_up', function() { 
