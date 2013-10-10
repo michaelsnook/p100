@@ -146,8 +146,7 @@ function handleActionkitSuccess(form) {
 
 $('#resume_up').ajaxForm({
     beforeSend: function() {
-        status.empty();
-        
+			console.log('before send');
     },
     success: function() {
         console.log('awesome');
