@@ -159,7 +159,7 @@ $('#resume_up').ajaxForm({
 	},
 	error: function(){
 		$('#resume_upload_form').fadeOut();
-		$("#thankyou .modal-body").html('<span id="error" style="display:none">Something went wrong with your resume! However, we did successfully recieve your application, and we will contact you soon.</span>');
+		$("#thankyou .modal-body").html('<ul class="compact" class="ak-errors" style="display:none"><li>Something went wrong with your resume! However, we did successfully recieve your application, and we will contact you soon.</li></ul>');
 		$('#thankyou .modal-body').children().fadeIn();
 	}
 	}); 
