@@ -123,14 +123,14 @@ function handleActionkitError(errors) {
 function handleActionkitSuccess(form) {
 
 		
-		if(form.indexOf('p100_app') > -1){
+	/*	if(form.indexOf('p100_app') > -1){
 			var akid = getQueryVariable(form, 'akid').substring(1).split('.')[0];
 			$('#input_akid').val(akid);
 	/*	$("#resume_upload_form").fadeIn();*/
 		$("#thankyou").modal();
 		$("#thankyou").modal('show');	
 		} else {
-		$('.modal').modal('hide');
+		$('.modal').modal('hide');*/
 	
 		/*Thank you message */
 		var thanks = '<p>Thank you.  You should recieve an email confirmation shortly.</p>'
@@ -138,7 +138,7 @@ function handleActionkitSuccess(form) {
 		$("#thankyou").modal();
 		$("#thankyou").modal('show');
 		    
-		}
+		/*}*/
 		
 
 		
