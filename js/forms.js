@@ -147,7 +147,7 @@ function handleActionkitSuccess(form) {
 
 
 
-$('#resume_up').ajaxForm({
+/*$('#resume_up').ajaxForm({
     beforeSend: function() {
 			console.log('before send');
     },
@@ -175,10 +175,8 @@ $(document).on('submit','#resume_up',function(e){
 				$("#thankyou .modal-body").html(upload_confirm);
 				$('#thankyou .modal-body').children().fadeIn();
 		});
-		*/
-		
 		return false;
-});
+});*/
 
 $('input[type="radio"] + label, input[type="radio"]').addClass('radio');
 
