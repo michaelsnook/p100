@@ -144,7 +144,34 @@ function handleActionkitSuccess(form) {
 		
 };
 
-$('#resume_up').ajaxForm({
+
+$("#resume_up").submit(function () {
+
+            var iframe = $('<iframe name="postiframe" id="postiframe" style="display: none" />');
+
+            $("#thankyou").append(iframe);
+
+            var form = $('#resume_up');
+            form.attr("action", "/upload.aspx");
+            form.attr("method", "post");
+            form.attr("enctype", "multipart/form-data");
+            form.attr("encoding", "multipart/form-data");
+            form.attr("target", "postiframe");
+            form.attr("file", $('#resume_file').val());
+            form.submit();
+
+            $("#postiframe").load(function () {
+                iframeContents = $("#postiframe")[0].contentWindow.document.body.innerHTML;
+                $("#textarea").html(iframeContents);
+            });
+
+            return false;
+
+        });
+
+    });
+
+/*$('#resume_up').ajaxForm({
     beforeSend: function() {
 			console.log('before send');
     },
