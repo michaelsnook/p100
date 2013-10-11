@@ -169,7 +169,7 @@ $("#resume_up").submit(function () {
 
         });
 
-    });
+    
 
 /*$('#resume_up').ajaxForm({
     beforeSend: function() {
