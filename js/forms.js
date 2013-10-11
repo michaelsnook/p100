@@ -191,7 +191,7 @@ $(document).on(ajaxForm, '#resume_up', function() {
 	}
             }); 
 */
-$(document).on('submit','#resume_up',function(e){
+/*$(document).on('submit','#resume_up',function(e){
 		e.preventDefault();
 		/*$.post("http://boldprogressives.org/resume_upload.php", $(this).serializeObject(), function(){
 				$('#resume_upload_form').fadeOut();
@@ -199,11 +199,10 @@ $(document).on('submit','#resume_up',function(e){
 				$("#thankyou .modal-body").html(upload_confirm);
 				$('#thankyou .modal-body').children().fadeIn();
 		});
-		*/
 		
 		return false;
 });
-
+*/
 $('input[type="radio"] + label, input[type="radio"]').addClass('radio');
 
   
