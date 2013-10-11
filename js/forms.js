@@ -126,7 +126,7 @@ function handleActionkitSuccess(form) {
 		if(form.indexOf('p100_app') > -1){
 			var akid = getQueryVariable(form, 'akid').substring(1).split('.')[0];
 			$('#input_akid').val(akid);
-		$("#resume_upload_form").fadeIn();
+	/*	$("#resume_upload_form").fadeIn();*/
 		$("#thankyou").modal();
 		$("#thankyou").modal('show');	
 		} else {
@@ -144,7 +144,7 @@ function handleActionkitSuccess(form) {
 		
 };
 
-
+/*
 $("#resume_up").submit(function () {
 
             var iframe = $('<iframe name="postiframe" id="postiframe" style="display: none" />');
