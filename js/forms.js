@@ -123,14 +123,14 @@ function handleActionkitError(errors) {
 function handleActionkitSuccess(form) {
 
 		
-	/*	if(form.indexOf('p100_app') > -1){
+		if(form.indexOf('p100_app') > -1){
 			var akid = getQueryVariable(form, 'akid').substring(1).split('.')[0];
 			$('#input_akid').val(akid);
-	/*	$("#resume_upload_form").fadeIn();*/
+		$("#resume_upload_form").fadeIn();
 		$("#thankyou").modal();
 		$("#thankyou").modal('show');	
 		} else {
-		$('.modal').modal('hide');*/
+		$('.modal').modal('hide');
 	
 		/*Thank you message */
 		var thanks = '<p>Thank you.  You should recieve an email confirmation shortly.</p>'
@@ -138,38 +138,14 @@ function handleActionkitSuccess(form) {
 		$("#thankyou").modal();
 		$("#thankyou").modal('show');
 		    
-		/*}*/
+		}
 		
 
 		
 };
 
-/*
-$("#resume_up").submit(function () {
 
-            var iframe = $('<iframe name="postiframe" id="postiframe" style="display: none" />');
 
-            $("#thankyou").append(iframe);
-
-            var form = $('#resume_up');
-            form.attr("action", "/upload.aspx");
-            form.attr("method", "post");
-            form.attr("enctype", "multipart/form-data");
-            form.attr("encoding", "multipart/form-data");
-            form.attr("target", "postiframe");
-            form.attr("file", $('#resume_file').val());
-            form.submit();
-
-            $("#postiframe").load(function () {
-                iframeContents = $("#postiframe")[0].contentWindow.document.body.innerHTML;
-                $("#textarea").html(iframeContents);
-            });
-
-            return false;
-
-        });
-
-    
 
 /*$('#resume_up').ajaxForm({
     beforeSend: function() {
@@ -191,7 +167,7 @@ $(document).on(ajaxForm, '#resume_up', function() {
 	}
             }); 
 */
-/*$(document).on('submit','#resume_up',function(e){
+$(document).on('submit','#resume_up',function(e){
 		e.preventDefault();
 		/*$.post("http://boldprogressives.org/resume_upload.php", $(this).serializeObject(), function(){
 				$('#resume_upload_form').fadeOut();
@@ -199,10 +175,11 @@ $(document).on(ajaxForm, '#resume_up', function() {
 				$("#thankyou .modal-body").html(upload_confirm);
 				$('#thankyou .modal-body').children().fadeIn();
 		});
+		*/
 		
 		return false;
 });
-*/
+
 $('input[type="radio"] + label, input[type="radio"]').addClass('radio');
 
   
