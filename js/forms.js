@@ -55,17 +55,7 @@ return args;
 
 $('form').each(function(){
 	var args = getArgs();
-	
-	for(arg in args){
-		if(arg == 'action_session' && $(this).attr('id') == 'p100_applicant')
-		{
-			$('input[value='+args[arg]+']').attr('checked', 'true');	
-		} else {
-		$(this).append('<input type="hidden" name="'+arg+'" value="'+args[arg]+'" />');
-			}
-	}
-	
-});
+	});
 
 function getQueryVariable(string, variable){
        var query = string.substring(1);
@@ -123,13 +113,6 @@ function handleActionkitError(errors) {
 function handleActionkitSuccess(form) {
 
 		
-		if(form.indexOf('p100_app') > -1){
-			var akid = getQueryVariable(form, 'akid').substring(1).split('.')[0];
-			$('#input_akid').val(akid);
-		$("#resume_upload_form").fadeIn();
-		$("#thankyou").modal();
-		$("#thankyou").modal('show');	
-		} else {
 		$('.modal').modal('hide');
 	
 		/*Thank you message */
@@ -143,53 +126,6 @@ function handleActionkitSuccess(form) {
 
 		
 };
-
-
-
-
-/*$('#resume_up').ajaxForm({
-    beforeSend: function() {
-			console.log('before send');
-    },
-    success: function() {
-        console.log('awesome');
-    },
-	complete: function(xhr) {
-		console.log(xhr.responseText);
-	},
-	error: function(){
-		$('#resume_upload_form').fadeOut();
-		$("#thankyou .modal-body").html('<span class="error" style="display:none">Something went wrong with your resume! However, we did successfully recieve your application, and we will contact you soon.</span>');
-		$('#thankyou .modal-body').children().fadeIn();
-	}
-	}); 
-
-
-
-
-$(document).on('submit','#resume_up',function(e){
-		e.preventDefault();
-		/*$.post("http://boldprogressives.org/resume_upload.php", $(this).serializeObject(), function(){
-				$('#resume_upload_form').fadeOut();
-				var upload_confirm = '<span id="upload_confirm" style="display:none">Thanks! Your resume uploaded successfully!</span>';
-				$("#thankyou .modal-body").html(upload_confirm);
-				$('#thankyou .modal-body').children().fadeIn();
-		});
-		return false;
-});*/
-
-$('input[type="radio"] + label, input[type="radio"]').addClass('radio');
-
-  
-$('input[type=radio]').on('click', function() {
-   	var radio_for = this.name;
-	$('[name="'+radio_for+'"]').next("label").removeClass('active');
-   	$(this).next('label').addClass('active');
-});
-
-$(document).on('click', 'a[href="#contact"]', function(){
-	$('#contact select').val($(this).attr('data-type'));
-});
 
 
 validators = {};
