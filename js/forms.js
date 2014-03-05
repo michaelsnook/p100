@@ -57,13 +57,13 @@ $('form').each(function(){
 	var args = getArgs();
 	
 	for(arg in args){
-		if(arg == 'action_session' && $(this).attr('id') == 'p100_applicant')
-		{
-			$('input[value='+args[arg]+']').attr('checked', 'true');	
+		if(arg == 'action_session' && $(this).attr('id') == 'p100_applicant'){
+			$('input[value='+args[arg]+']').attr('checked', 'true');
 		} else {
 		$(this).append('<input type="hidden" name="'+arg+'" value="'+args[arg]+'" />');
 			}
 	}
+	$(this).append('<input type="hidden" name="action_referrer" value="'+document.referrer+'" />');
 	
 });
 
