@@ -696,7 +696,6 @@ border-radius: 0;
   
 
 .thumbnail blockquote {  
-cursor: pointer; 
     content: "";  
 	margin: 10px;
 	background: rgba(0,0,0, 0.5);  
