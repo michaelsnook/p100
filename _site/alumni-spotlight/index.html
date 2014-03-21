@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:og="http://ogp.me/ns#"
+xmlns:fb="http://www.facebook.com/2008/fbml">
+  <head>
+  
+<base href="../">
+    <title>P100 - Alumni Spotlight</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Progressive Change Campaign Committee's training program, P100, is training hundreds of progressive campaign staff and candidates to run effective campaigns and win. We're building an army of campaigners equipped with the most recent best practices backed by hard science and years of experience running progressive campaigns." />
+        <meta property="fb:admins" content="648953143,4100620">
+        <meta property="fb:app_id" content="568993086497595" />
+<meta property="og:title" content="Progressive Change Campaign Committee" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://p100training.com/img/photos/photo12.png" />
+<meta property="og:image" content="http://p100training.com/img/photos/photo13.png" />
+<meta property="og:url" content="http://p100training.com/" />
+<meta property="og:description" content="The Progressive Change Campaign Committee's training program, P100, is training hundreds of progressive campaign staff and candidates to run effective campaigns and win. We're building an army of campaigners equipped with the most recent best practices backed by hard science and years of experience running progressive campaigns." />
+<meta property="og:site_name" content="P100 Training" />    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/p100.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="thankyou" tabindex="-1" role="dialog" aria-labelledby="Thank you!" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Thank you!</h4>
+        </div>
+        <div class="modal-body">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="Thank you!" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Contact Us about P100</h4>
+        </div>
+        <div class="modal-body">
+			<p>Want to host a training session?  Want to get in touch with P100 graduates?  Have another question?  Feel free to contact us here.</p>
+			
+			
+			<form class="ak-form" name="act" id="p100_contact" method="POST" action="javascript:submitForm('p100_contact','p100_contact');" accept-charset="utf-8">
+	<!-- begin user_form_wrapper.html -->
+
+			<ul class="compact" class="ak-errors" style="display:none"></ul>
+			<div id="unknown_user" class="user-form ak-labels-overlaid ak-errs-below">
+					
+		<div class="row">
+		<div class="col-lg-6">
+		<label for="first_name" class="sr-only">First Name</label>
+    <input type="text" class="form-control" name="first_name" id="id_first_name" placeholder="first name" />
+  </div>
+  <div class="col-lg-6">
+	  <label for="last_name" class="sr-only">Last Name</label>
+    <input type="text" class="form-control" name="last_name" id="id_last_name" placeholder="last name" />
+  </div>
+		</div>
+		
+		<div class="row">
+
+  <div class="col-lg-8">
+  <label for="email" class="sr-only">Email</label>
+   <input type="text" class="form-control" name="email" class="required" id="email" placeholder="e-mail address" />
+  </div>
+ 
+   <div class="col-lg-4">
+   <label for="zip" class="sr-only">Zipcode</label>
+	  <input type="text" class="form-control" name="zip" class="required" id="zip" placeholder="zip code" />
+  </div>
+		</div>
+		<div class="row">
+  
+     <div class="col-lg-12">
+     <label for="action_contact_type">Why would you like to contact us?</label>
+	  <select name="action_contact_type"  class="required form-control">
+	  	<option value="general">I have a general inquiry</option>
+	  	<option value="host">I would like to host a training.</option>
+	  	<option value="hire-grad">I would like to hire a graduate.</option>
+	  </select>
+  </div>
+  
+  <div class="col-lg-12">
+	   <label for="action_contact_detail">Tell us a little more:</label>
+	  <textarea class="form-control required" name="action_contact_detail" rows="4"></textarea>
+  </div>
+  
+ <input type="hidden" name="country" value="United States" />
+		<input type="hidden" name="page" class="page" value="p100_contact" />
+  
+</div>		</div>
+
+			
+			
+        </div>
+        <div class="modal-footer">
+		
+
+         <button type="submit" class="submit cf btn take-action btn-primary" >Contact</button>
+
+		
+
+		</form>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  
+  
+   <nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+ <div class="container">
+ <div class="row">
+ <div class="col-lg-10 col-lg-offset-1">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-nav ul">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand pull-left" href=""><img class="logo" src="img/p100-logo.png" alt="P100 Logo"/><h1 class="sr-only">P100</h1></a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div id="header-nav" class="navbar-collapse">
+    <ul class="nav navbar-nav pull-right collapse">
+                     <li><a href="/about/">About</a>
+                     <li><a href="/alumni-spotlight/">Alumni Spotlight</a></li>
+                     <li><a href="/apply/">Apply</a></li>
+                     <li><a href="/trainings/">Trainings</a>
+                     <li><a href="#contact" data-toggle="modal" data-type="general">Contact</a></li>
+           <li><a href="https://secure.actblue.com/contribute/page/p100?refcode=website-typ-p100_app-header" target="_blank">Donate</a></li>
+   </ul>
+  </div><!-- /.navbar-collapse -->
+ </div></div></div>
+    </nav>
+    
+  
+    
+    
+<div id="alumni_spotlight" class="content_area">
+    <div class="container">
+		
+      <!-- Main hero unit for a primary marketing message or call to action -->
+       <div class="row">
+      	<div class="col-lg-10 col-lg-offset-1">
+      	
+  <div class="pull-right"><a href="#contact" data-toggle="modal" data-type="host" class="host btn btn-primary btn-large">Want to host a training?</a></div>
+     
+      	</div>
+      </div>
+      <div class="row">
+      	<div class="col-lg-10 col-lg-offset-1">
+
+      	<div id="content_card">
+      	
+      	  <!-- end header-->
+
+    
+	  	  <h1>Alumni Spotlight</h1>
+
+<div class="row spotlingt_intro">
+<div class="col-md-9"><p>The P100 program is proud of our alumni, and we are pleased to showcase their accomplishments. Our alumni manage Congressional races, run non-profits, lead important community initiatives, and are proud to be progressive!</p></div>
+<div class="col-md-3"> <a href="#contact" data-toggle="modal" data-type="hire-grad" class="btn btn-primary btn-large hire_grad">Hire a Grad</a></div>
+</div>
+<div class="row carousel_container">
+<div id="spotlight_carousel" class="carousel slide " data-ride="carousel" data-interval="false">
+
+<ol class="carousel-indicators">
+                   <li data-target="#spotlight_carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#spotlight_carousel" data-slide-to="1"></li>
+          <li data-target="#spotlight_carousel" data-slide-to="2"></li>
+          <li data-target="#spotlight_carousel" data-slide-to="3"></li>
+          <li data-target="#spotlight_carousel" data-slide-to="4"></li>
+          <li data-target="#spotlight_carousel" data-slide-to="5"></li>
+          <li data-target="#spotlight_carousel" data-slide-to="6"></li>
+          
+      
+        </ol>
+        
+        <div class="increment_controls">
+           <a class="left carousel-control" href="#spotlight_carousel" data-slide="prev">
+         Previous
+        </a>
+
+            <a class="right carousel-control" href="#spotlight_carousel" data-slide="next">
+          Next
+        </a>
+        </div>
+        
+<div class="carousel-inner">
+<div class="alumni_spot item active">
+
+  <div class="thumbnail"><img src="alumni-spotlight/img/branden.jpeg" alt="Photo of Branden J Snyder" />	</div>
+		
+		<h3 class="alumni_name">Branden J Snyder </h3>
+										 <p class="alumni_info">Detroit, MI<br/>
+  										 2013 Kentucky Field and Finance Graduate</p>
+
+										 <p><strong>What is your current position and what do you do on a daily basis? </strong></p><p>
+I am currently an Organizing Fellow for the Progressive Change Campaign Committee. I am learning the ropes of online organizing & fundraising. Currently, I'm working on a campaign calling for support of Senator Elizabeth Warren's plan for the United States Postal Service to provide small scale financial services for underserved communities. This policy idea aligns with my previous experience as an organizer working in low income communities and and my personal commitment to elevate the voices of the underserved and underrepresented in the political process.</p>
+
+<p><strong>What is your biggest success since attending the P100 training?</strong></p>
+<p>My biggest success was being able to utilize the fundraising and field organizing experience in the community and clergy development for our Opportunity For All transit campaign. The field training provided me with a rich technical understanding of creating and managing field operations - which is a small but vital component of community organizing.
+</p>
+<p><strong>What advice would you offer to future and current P100 alumni?</strong></p>
+<p>I would say continue to learn a wide variety of skills and build a wide variety of relationships with others in on the campaign trail, in the P100 and the PCCC. The power within our relationships can move the country forward and grow our capacity to create change. And you never know who might have the next lead or can offer additional opportunities to gain new skills.
+</p>
+
+</div>
+<div class="alumni_spot item">
+	<div class="thumbnail"><img src="alumni-spotlight/img/tammy.png" alt="Photo of Tammy Berlin" /></div>
+		<h3 class="alumni_name">Tammy Berlin </h3>
+										 <p class="alumni_info">Crestwood, KY<br/>
+  										 2013 Kentucky Field and Finance Graduate
+										 </p>
+
+<p><strong>What is your current position and what do you do on a daily basis?</strong></p>
+<p>
+Currently, I am the Vice-President of the Jefferson County Teachers Association that has over 5,700 members and is the largest bargaining local teachers union in Kentucky. I am currently heading up my local's efforts to get our state legislature to follow through with their required contributions to the teachers' pension plan, and I'm working with our Public Education Advocacy Committee and a coalition of social justice groups that are interested in education issues to fight charter school legislation in Kentucky. 
+</p>
+
+<p><strong>What is your biggest success since attending the P100 training?</strong></p>
+<p>
+In December, I was able to use my call time skills from the finance training to engage one of our school board members in helping us raise corporate donations to provide stipends for National Board Certified Teacher candidates.   That was the biggest phone call of my life, and it netted us a commitment from the board member to solicit $150K in donations from his friends and colleagues in the local business community.
+</p>
+<p>
+After the new year, I was able to use what I learned in the field training to organize a phone bank to encourage our members to participate in a call-in day to the Governor's office and the Legislature asking for funding for our pension system.   Our call-in day was so successful that we actually shut down the Governor's phone line for a short time due to high call volume.  The Governor responded positively by including funding for our pension in his budget proposal.
+</p>
+
+<p><strong>What advice would you offer to future and current P100 alumni?</strong></p>
+<p>
+Find your niche, and work it!  For me, that means using social media to build a support network for Jefferson County Teachers Association legislative issues.  Whatever your area of expertise is, the skills that you've learned at P100 will help you get the job done.
+</p>
+
+</div>
+<div class="alumni_spot item">
+	<div class="thumbnail"><img src="alumni-spotlight/img/westley.jpg" alt="Photo of Westley Bayas III" /></div>
+		<h3 class="alumni_name">Westley Bayas III</h3>
+										 <p class="alumni_info">New Orleans, LA<br/>
+  										 2013 Kentucky Finance Graduate
+  										 </p>
+
+<p><strong>What is your current position and what do you do on a daily basis?</strong></p>
+
+
+<p>Currently, I'm developing a mission driven consulting firm called Magnolia Strategies that will launch in April. It will be a progressive oriented firm that will provide services regarding policy development, public affairs management and strategic planning for clients. Simply put, our mission is to support people, policies and organizations that work to ensure that everyone gets a fair shot, everyone does his or her fair share, and everyone plays by the same rules. </p>
+<p>
+While I'm working on Magnolia Strategies, I've been keeping busy as an Organizing Fellow with the PCCC helping with projects around campaign finance reform and the Chris Christie controversy. I also recently worked on local campaigns in the New Orleans area, include Mayor Mitch Landrieu's re-election. I'm also involved in a bunch of other civic organizations to ensure that progressive values are considered in every aspect of life in New Orleans</p>
+
+<p><strong>What does being a progressive staffer mean to you?</strong></p>
+<p>
+To me, being a progressive staffer means to always remember that our work isn't just to win elections but to build power in the communities that we are working with and alongside.
+</p>
+
+<p><strong>What advice would you offer to future and current P100 alumni?</strong></p>
+<p>Be willing to take the lowest job on the totem pole and work your way up. If you excel at "Visibility Director" in your first campaign, the next campaign will know that you will have the desire and energy to be an excellent Field Director. 
+</p>
+
+</div>
+<div class="alumni_spot item">
+
+	<div class="thumbnail"><img src="alumni-spotlight/img/shelby.jpg" alt="Photo of Shelby Alexander" /></div>
+		<h3 class="alumni_name">Shelby Alexander</h3>
+										 <p class="alumni_info">Austin, TX<br/>
+  										 2013 Texas Finance Graduate<br/>
+  										   										 <a href="http://www.burntorangereport.com/user/Shelby%20Alexander" target="_blank">Read Shelby's Blog at the Burnt Orange Report</a>
+										 </p>
+
+<p><strong>What is your current position and what do you do on a daily basis?</strong></p>
+<p>I am the Executive Assistant to Austin City Council Member Mike Martinez. My day to day includes running our office at City Hall— scheduling meetings for the Council Member, taking calls and working on issues Austinites come to our office with. I think working on campaigns has made me a better listener, which is half of what my job is: listening and paying close attention to addressing concerns Austinites have to develop policies to improve our City. 
+</p>
+<p>
+In addition to that, every other week we have meetings at City Hall, so I help with research on new policies and items coming to Council, and vet the community input we receive on them as well. Austin is such a growing, changing City that the issues people come to Council with are extremely diverse. In addition to that outside of City Hall, I'm a regular blogger at Texas' largest progressive political blog, the Burnt Orange Report. 
+</p>
+<p><strong>What is your biggest success since attending the P100 training?</strong></p>
+<p>My biggest success besides joining Austin City Hall would be being one of the thousands of people at the Texas Capitol this summer fighting for reproductive rights. I helped fill rooms of people willing to testify at the initial House hearing of what would be infamously known as HB 2, which initiated the "peoples' filibuster." I worked in collaboration with my former boss, Representative Mary González and tons of other allies to motivate and encourage people about the realities HB 2 was going to bring to Texas to limit reproductive rights. I was a small cog in an enormous wheel of literally thousands of people, but I'm very proud of the work I contributed.
+</p>
+<p>
+This all happened just a week or two after my P100 training— shortly thereafter Wendy Davis would filibuster said bill and be launched into national spotlight. I then realized how lucky I was that my P100 training included people like Terrysa Guerra and Elizabeth Connor, who helped get (and keep) Wendy in the State Senate in the first place, who are now making even bigger strides to get Wendy Davis in the Governor's Mansion!
+</p>
+
+<p><strong>What does being a progressive staffer mean to you?</strong></p>
+<p>Being a progressive staffer to me means staying committed and connected to our communities. It's about re-evaluating ourselves and our methods to how we believe we implement change. We have to listen, be willing to step up and step back, and do what is right. To be a progressive staffer means we have to be committed to undoing a system that has historically put many people at a disadvantage, and ensure everyone is represented at the table so that they are not just "included," but that issues are centered around those who are most affected.
+</p>
+<p><strong>What advice would you offer to future and current P100 alumni?</strong></p>
+<p>Be open to any kind of experience and opportunity available. I myself had not had any previous experience in finance, but was willing to challenge myself and came out of the training with a whole new skill set! Having a diverse array of tools in your belt will make you more appealing to any campaign or employer.</p>
+
+
+
+</div>
+<div class="alumni_spot item">
+
+	<div class="thumbnail"><img src="alumni-spotlight/img/crystal.jpg" alt="Photo of Crystal Lund" /></div>
+		<h3 class="alumni_name">Crystal Lund</h3>
+										 <p class="alumni_info">Milwaukee, WI<br/>
+  										 2013 Wisconsin Field and 2014 Wisconsin Finance Graduate
+										 </p>
+
+<p><strong>What is your current position and what do you do on a daily basis?</strong>
+<p>I'm currently the Administrative Assistant to the VP of Public Affairs and Community Education for Planned Parenthood of Wisconsin.  I do everything from data quality management and process development to managing volunteers.  I'm also very involved in logistics coordination and event planning.  There's a lot on my plate in addition to administrative duties!</p>
+
+<p><strong>Do you have any previous campaign experience?</strong></p>
+<p>My prior campaign experience has all been for Planned Parenthood Advocates of WI (PPAWI) for the past 3.5 years.  PPAWI is the lobby and electoral arm of Planned Parenthood of WI.  My area of expertise is in phone banking and volunteer recruitment.  I put my sales and marketing experience to use and my first event for PPAWI was to fill 150 volunteer phone bank positions.  Using sales techniques, I recruited over 350 volunteers in 1 month and had a high enough show rate to fill all of the positions.  I've canvassed as well, but prefer phones.</p>
+
+<p><strong>What is your biggest success since attending the P100 training?</strong></p>
+<p>Since the P100 classes, my biggest success has been taking on finance work with Jonathan Brostoff who is running for Assembly District 19 in Milwaukee and a P100 graduate.  I've been doing donor research and working with his campaign manager to develop a budget so I can put together a finance plan.  I'm also starting a consulting business for organization, time management, and budget/finance planning.</p>
+
+<p><strong>What does being a progressive staffer mean to you?</strong></p>
+<p>I've been asked that a lot recently! For me, being a progressive means that I lift up people and communities.  People come before corporations and money.  All of the issues that I feel strongly about, such as access to reproductive health care, equal pay, and improving public education, and human rights all improve the lives of people.  They strengthen communities.  I call myself a progressive because I put community first.</p>
+
+<p><strong>What advice would you offer to future and current P100 alumni?</strong></p>
+<p>The best advice I can give to others who are working on campaigns or would like to in the future . . . believe in yourself and trust your abilities.  Don't give up.  The P100 programs showed me that I know what I'm doing and can do it well.  I just needed to trust that I could do it.</p>
+
+</div>
+<div class="alumni_spot item">
+
+	<div class="thumbnail"><img src="alumni-spotlight/img/charles.JPG" alt="Photo of Charles Douglas" /></div>
+		<h3 class="alumni_name">Charles Douglas</h3>
+										 <p class="alumni_info">Henderson, NC<br/>
+  										 2013 North Carolina Finance Graduate
+                    </p>
+<p><strong>What is your current position and what do you do on a daily basis?</strong></p>
+<p>Currently, I am a full time student working towards my undergraduate degree in Sociology and Economics at UNC- Chapel HIll. However, that hasn't kept my hands idle. I currently serve the democrats of Vance County as the 2nd Vice Chair. As 2nd Vice Chair  it is my responsibility to share training information with other progressive democrats to build on our coalitions and strengthen the efforts of progressives countywide. </p>
+
+<p>I also serve as President of Young Democrats where we meet bi-monthly to discuss current political events. The nature of our meetings in to fully understand the implications of legislation passed by Congress and how the relates to us nationally, at the state level, and locally. I also am active on the Henderson/Vance Downtown Development Committee, Human Relation Commission, Henderson Planning Board, and the Vance County Appearance Commission. </p>
+<p>
+I serve on these  boards to add a progressive voice to local level politics. As many of the boards meet monthly, I have the opportunity to discuss with community and political leaders within the county ideas pertaining to reforming zoning, land use, and economic development strategies. It is my hope that progressive ideologies implemented at the local level might one day be the blueprint for statewide reform.</p>
+
+<p><strong>How did you become interested in politics?</strong></p>
+<p>
+I first found my passion for politics when I worked as a Field Organizer in 2012 for Organizing for America. As I worked to get the President re-elected I quickly realized that as a young American I needed to become more involved in the issues facing my generation. As I coordinated volunteers and conducted phone banks with everyday Americans, I realized that there was much that could be done on the local level to support progressive policies. As I worked on my own city council campaign I found that campaign finance played a powerful role in reaching voters and informing them of proven progressive policies that could change their way of life for the better. That is why when I saw an email from the Progressive Change Campaign Committee about training progressive democrats in North Carolina I leapt at the opportunity!
+</p>
+
+<p><strong>What is your biggest success since attending the P100 training?</strong></p>
+<p>In North Carolina we have the Institute of Political Leadership that selects around 15 candidates from around the state to participate in an intensive non-partisan training program to help elect more competent leaders of the future. After completing the PCCC Finance Training Program I was able to conduct finance training of my own which help better prepare progressives for the own upcoming elections. During one of these training I received a referral to the IOPL program and within the week I was invited to participate in the program as a Spring Fellow.
+</p>
+<p><strong>What does being a progressive staffer mean to you?</strong></p>
+<p>Being a progressive to me is not being afraid of change and the unknown to the point of inaction. Being progressive to me is about pulling away from a reactionary posture and that stifles compromise and innovative policies. It is about being proactive about growing concerns and having the political courage to stand up for what is right. </p>
+
+<p><strong>What advice would you offer to future and current P100 alumni?</strong> </p>
+<p>If you are P100 graduate and you are working on a campaign know that you have top tier training and that any questions you are uncertain of can be answered by the tight knit group of P100 alumni. Instructors from the course will are open to answering question even after the course has concluded. For those looking to work on a campaign look no further than the P100's extensive alumni framework and  the P100 instructors for job opening likely to come in the future.
+</p>
+
+</div>
+<div class="alumni_spot item">
+
+	<div class="thumbnail"><img src="alumni-spotlight/img/lawrence.png" alt="Photo of Tammy Berlin" /></div>
+		<h3 class="alumni_name">Lawrence Mason III</h3>
+										 <p class="alumni_info">New Orleans, LA<br/>
+  										 2013 Texas Finance Graduate
+										 </p>
+<p><strong>What do you currently do?</strong></p>
+<p>I received my Bachelor of Arts degree in Mass Communication/Journalism from the University of Louisiana at Lafayette. I am currently pursuing my master's in Public Administration from the University of New Orleans. I write for a political website, All Things Democrat, where I have reported on election updates, candidate profiles, etc. I also work as a group mentor/tutor with the Urban League College Track Program where we guide and assist high school students through their academic career in high school and college.</p>
+
+<p><strong>What is your biggest success since attending the P100 training?</strong></p>
+<p>This is quite the hard one to narrow down between internships, work, and community development, but with issues like minimum wage, unemployment and other issues impacting much the nation's people, I will say that working toward those and hopefully seeing improvement in those realms will be my greatest success.</p>
+
+<p><strong>What does being a progressive staffer mean to you?</strong></p>
+<p>First, it means remaining determined to the beliefs of fellow progressives and the people of our great nation. I value the opportunity to be involved in causes that will impact people around the nation.</p>
+
+<p><strong>What advice would you offer to future and current P100 alumni?</strong></p>
+<p>I would say that campaigns are fast-paced and fun, but find the candidate(s) who represents your beliefs and will stay true to those promises made on the campaign trail. The country and its people deserve elected officials who will stand.</p>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- footer -->
+      <footer>
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-offset-1 col-lg-10">
+              
+                
+                <div class="row">
+                
+                <div class="col-lg-4 col-md-4">
+                   <nav role="navigation">
+                   	<ul>
+	                   <li><a href="/about/">About</a>
+	                   
+                     <li><a href="/alumni-spotlight/">Alumni Spotlight</a></li>
+                     <li><a href="/apply/">Apply</a></li>
+                     <li><a href="/trainings/">Trainings</a>
+                     
+                     <li><a href="#contact" data-toggle="modal" data-type="general">Contact</a></li>
+                     <li><a href="#contact" data-toggle="modal" data-type="host">Host</a></li>
+           <li><a href="https://secure.actblue.com/contribute/page/p100?refcode=website-typ-p100_app-footer" target="_blank">Donate</a></li>
+                   	</ul>
+                   
+                   </nav>
+                </div>
+                
+                <div class="col-lg-8 col-md-8">
+       
+        <h3>About P100 and PCCC</h3>
+        <p>The Progressive Change Campaign Committee&apos;s training program, P100, is training hundreds of progressive campaign staff and candidates to run effective campaigns and win. We&apos;re building an army of campaigners equipped with the most recent best practices backed by hard science and years of experience running progressive campaigns.</p>
+        </div>
+                </div>
+        
+        <div class="row">
+	        <div class="disclaimer">
+                    <p>Paid for by the Progressive Change Campaign Committee PAC (BoldProgressives.org) and not authorized by any candidate or candidate's committee. Contributions to the PCCC are not deductible as charitable contributions for federal income tax purposes.</p>
+                </div>
+        </div>
+        
+        </div>
+        
+        
+        </div>
+        
+      </div>
+      </footer>
+
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/pccc-ak-async-post.js"></script>
+    <script type="text/javascript">
+      $('.carousel').bind('slide', function(e) {
+    setTimeout(function () {
+        var next_h = $(e.relatedTarget).outerHeight();
+        $('.carousel').css('height', next_h);
+    }, 10);
+});
+    </script>
+    
+    <script src="js/forms.js"></script>
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6874881-7', 'p100training.org');
+  ga('send', 'pageview');
+
+</script>
+    
+  </body>
+</html>

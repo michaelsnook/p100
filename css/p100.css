@@ -131,6 +131,15 @@ background-size: cover;
 box-shadow: inset 0 20px 20px -20px rgba(20,20,20,0.3);
 }
 
+#alumni_spotlight {
+	background: url(../img/p100site_image_alum.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+box-shadow: inset 0 20px 20px -20px rgba(20,20,20,0.3);
+}
+
 #apply {
 	background: url(../img/p100site_image5.jpg) no-repeat center center fixed; 
 -webkit-background-size: cover;
@@ -321,15 +330,19 @@ nav{
 padding-left: 0;
 }
 
-.trainer_name{
+.trainer_name, .alumni_name{
 	margin-top:10px;
 	margin-bottom: 10px;
 	color: #1a86ab;
 }
 
-.trainer_title{
+.trainer_title, .alumni_info{
 	margin:0;
 	font-weight: 400;
+}
+
+.alumni_info{
+  margin-bottom: 20px;
 }
 
 .alumni_list{
@@ -337,6 +350,125 @@ padding-left: 0;
 	margin-left: 0;
 	padding-left: 0;
 }
+
+#spotlight_carousel .carousel-indicators {
+bottom: auto;
+}
+
+#spotlight_carousel .carousel-indicators li.active {
+  background-color: #1a86ab;
+  border: 1px solid #1a86ab;
+}
+
+#spotlight_carousel .carousel-indicators li {
+  background-color: #eee;
+  border: 1px solid #eee;
+  width:12px;
+  height: 12px;
+}
+
+#content_card .carousel_container {
+width: 100%;
+float: none;
+margin-left:0;
+margin-top: 30px;
+display: block;
+background: #eee;
+padding: 10px;
+border-radius: 0;
+}
+
+.carousel_container {
+	border:0;
+	border-radius: 0;
+		position:relative;
+	
+}
+
+.carousel_container:before, .carousel_container:after {
+
+	content: "";
+	position: absolute;
+	z-index: -1;
+	-ms-transform: skew(-3deg,-2deg);
+	-webkit-transform: skew(-3deg,-2deg); /* Safari and Chrome */
+	-o-transform: skew(-3deg,-2deg); /* Opera */
+	-moz-transform: skew(-3deg,-2deg); /* Firefox */
+	bottom: 14px;
+	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.3);
+	height: 50px;
+	left: 1px;
+	max-width: 50%;
+	width: 50%;
+}
+.carousel_container:after {
+
+	-ms-transform: skew(3deg,2deg); /* IE 9 */
+	-webkit-transform: skew(3deg,2deg); /* Safari and Chrome */
+	-o-transform: skew(3deg,2deg); /* Opera */
+	-moz-transform: skew(3deg,2deg); /* Firefox */
+	left: auto;
+	right: 1px;
+}
+
+.spotlight_intro{
+  margin: 0 -15px;
+}
+
+a.right.carousel-control, a.left.carousel-control{
+  background: none;
+  color: #1a86ab;
+  font-size: 14px;
+  text-shadow: none;
+  width: auto;
+  padding: 12px 10px;
+  height: 30px;
+  line-height: 20px;
+  opacity: 1;
+filter: alpha(opacity=100);
+}
+
+a.left.carousel-control:before{
+  content: "";
+  display:inline-block;
+  width: 0;
+  height: 0;
+	vertical-align: middle;
+	border-top: 6px solid rgba(0, 0, 0, 0);
+border-bottom: 6px solid rgba(0, 0, 0, 0);
+border-right: 8px solid #1A86AB;
+vertical-align: middle;
+margin-right: 4px;
+margin-bottom: 2px;
+}
+
+a.right.carousel-control:after{
+  content: "";
+  display:inline-block;
+  width: 0;
+  height: 0;
+  	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent; 
+	border-left:8px solid #1a86ab; 
+	vertical-align: middle;
+	margin-left: 4px;
+	margin-bottom: 2px;
+}
+
+
+.increment_controls{
+  position: absolute;
+left: 0;
+top:0;
+z-index: 15;
+width: 100%;
+padding-left: 0;
+list-style: none;
+text-align: center;
+opacity: 1;
+filter: alpha(opacity=100);
+}
+
 
 
 img {
@@ -352,6 +484,18 @@ margin: 10px 0;
 padding: 10px;
 border-radius: 0;
 }
+
+.alumni_spot{
+  clear:both;
+  display:block;
+  padding: 60px 0;
+}
+
+#content_card .alumni_spot .thumbnail{
+  width: 200px;
+}
+
+
 
 blockquote footer{
 	background: transparent;
@@ -379,10 +523,17 @@ footer .disclaimer p{
 	padding-bottom: 0;
 }
 
-footer a:link{
+footer a:link, footer a:visited{
 	color: #fff;
 }
 
+a, a:link, a:hover, a:visited{
+  color: #1a86ab;
+}
+
+a.btn{
+  color: #fff;
+}
 
 .form-control {
 background: #F8F8F8;
@@ -445,6 +596,43 @@ border-radius: 0;
 	border-top:solid 1px #818181;
 	padding-top: 20px;
 }
+
+
+#content_card .thumbnail.alumni{
+	border:0;
+	border-radius: 0;
+  position:relative;
+  z-index:2;
+  width: 200px;
+}
+
+#content_card .thumbnail.alumni:before, #content_card .thumbnail.alumni:after {
+
+	content: "";
+	position: absolute;
+	z-index: 0;
+	-ms-transform: skew(-3deg,-2deg);
+	-webkit-transform: skew(-3deg,-2deg); /* Safari and Chrome */
+	-o-transform: skew(-3deg,-2deg); /* Opera */
+	-moz-transform: skew(-3deg,-2deg); /* Firefox */
+	bottom: 14px;
+	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.3);
+	height: 50px;
+	left: 1px;
+	max-width: 50%;
+	width: 50%;
+}
+#content_card .thumbnail.alumni:after {
+
+	-ms-transform: skew(3deg,2deg); /* IE 9 */
+	-webkit-transform: skew(3deg,2deg); /* Safari and Chrome */
+	-o-transform: skew(3deg,2deg); /* Opera */
+	-moz-transform: skew(3deg,2deg); /* Firefox */
+	left: auto;
+	right: 1px;
+}
+
+
 
 @media (min-width: 480px){
 	.session{
@@ -568,6 +756,19 @@ box-shadow: inset 0 20px 20px -20px #333;
 	border-left: solid 1px #818181;
 }
 
+.carousel{
+  background: #fff;
+  padding: 20px;
+   -webkit-transition: height .5s ease;
+	-moz-transition: height .5s ease;
+	-ms-transition: height .5s ease;
+	-o-transition: height .5s ease;
+	transition: height .5s ease;
+}
+
+.btn.hire_grad{
+  width: 100%;
+}
 
 #hero{
 	margin: 40px 0;
