@@ -1,0 +1,49 @@
+trainings:
+  - name: la_april_field
+    date: April 5-6, 2014
+    location: Baton Rouge, LA
+    type: Field Training
+  - name: dc_april_candidate
+    date: April 7-8, 2014
+    location: Washington, DC
+    type: Candidate Training
+  - name: ca_april_fin
+    date: April 12-13, 2014
+    location: Los Angeles, CA
+    type: Finance Training
+  - name: ia_april_fin
+    date: April 26-27, 2014
+    location: Waterloo, IA
+    type: Finance Training
+  - name: co_may_field
+    date: May 3-4, 2014
+    location: Denver, CO
+    type: Field Training
+  - name: fl_may_fin
+    date: May 10-11, 2014
+    location: Orlando, FL
+    type: Finance Training
+  - name: pa_may_fin
+    date: May 24-25, 2014
+    location: Philadelphia, PA
+    type: Finance Training
+  - name: me_may_fin
+    date: May 30, 2014
+    location: Maine
+    type: Finance Training
+  - name: ca_june_field
+    date: June 7-8, 2014
+    location: Los Angeles, CA
+    type: Field Training
+  - name: co_june_fin
+    date: June 21-22, 2014
+    location: Denver, CO
+    type: Finance Training
+  - name: sd_june_field
+    date: June 28-29, 2014
+    location: South Dakota
+    type: Field Training
+  - name: me_july_field
+    date: July 12-13, 2014
+    location: Maine
+    type: Field Training
