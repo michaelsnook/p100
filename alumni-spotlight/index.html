@@ -2,109 +2,7 @@
 layout: base
 description:
 ---
-
-  <body>
   
-  <!-- Modal -->
-  <div class="modal fade" id="thankyou" tabindex="-1" role="dialog" aria-labelledby="Thank you!" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">Thank you!</h4>
-        </div>
-        <div class="modal-body">
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
-  
-  
-  <!-- Modal -->
-  <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="Thank you!" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">Contact Us about P100</h4>
-        </div>
-        <div class="modal-body">
-			<p>Want to host a training session?  Want to get in touch with P100 graduates?  Have another question?  Feel free to contact us here.</p>
-			
-			
-			<form class="ak-form" name="act" id="p100_contact" method="POST" action="javascript:submitForm('p100_contact','p100_contact');" accept-charset="utf-8">
-	<!-- begin user_form_wrapper.html -->
-
-			<ul class="compact" class="ak-errors" style="display:none"></ul>
-			<div id="unknown_user" class="user-form ak-labels-overlaid ak-errs-below">
-					
-		<div class="row">
-		<div class="col-lg-6">
-		<label for="first_name" class="sr-only">First Name</label>
-    <input type="text" class="form-control" name="first_name" id="id_first_name" placeholder="first name" />
-  </div>
-  <div class="col-lg-6">
-	  <label for="last_name" class="sr-only">Last Name</label>
-    <input type="text" class="form-control" name="last_name" id="id_last_name" placeholder="last name" />
-  </div>
-		</div>
-		
-		<div class="row">
-
-  <div class="col-lg-8">
-  <label for="email" class="sr-only">Email</label>
-   <input type="text" class="form-control" name="email" class="required" id="email" placeholder="e-mail address" />
-  </div>
- 
-   <div class="col-lg-4">
-   <label for="zip" class="sr-only">Zipcode</label>
-	  <input type="text" class="form-control" name="zip" class="required" id="zip" placeholder="zip code" />
-  </div>
-		</div>
-		<div class="row">
-  
-     <div class="col-lg-12">
-     <label for="action_contact_type">Why would you like to contact us?</label>
-	  <select name="action_contact_type"  class="required form-control">
-	  	<option value="general">I have a general inquiry</option>
-	  	<option value="host">I would like to host a training.</option>
-	  	<option value="hire-grad">I would like to hire a graduate.</option>
-	  </select>
-  </div>
-  
-  <div class="col-lg-12">
-	   <label for="action_contact_detail">Tell us a little more:</label>
-	  <textarea class="form-control required" name="action_contact_detail" rows="4"></textarea>
-  </div>
-  
- <input type="hidden" name="country" value="United States" />
-		<input type="hidden" name="page" class="page" value="p100_contact" />
-  
-</div>		</div>
-
-			
-			
-        </div>
-        <div class="modal-footer">
-		
-
-         <button type="submit" class="submit cf btn take-action btn-primary" >Contact</button>
-
-		
-
-		</form>
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
-  
-{% include nav.html %}
-    
 <div id="alumni_spotlight" class="content_area">
     <div class="container">
 		
@@ -158,7 +56,7 @@ description:
 <div class="carousel-inner">
 <div class="alumni_spot item active">
 
-  <div class="thumbnail"><img src="{{ site.root_url }}/alumni-spotlight/img/branden.jpeg" alt="Photo of Branden J Snyder" />	</div>
+  <div class="thumbnail"><img src="img/branden.jpeg" alt="Photo of Branden J Snyder" />	</div>
 		
 		<h3 class="alumni_name">Branden J Snyder </h3>
 										 <p class="alumni_info">Detroit, MI<br/>
