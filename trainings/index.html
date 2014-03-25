@@ -4,51 +4,46 @@ description:
 ---
     
 <div id="trainings" class="content_area">
-    <div class="container">
-		
-      <!-- Main hero unit for a primary marketing message or call to action -->
-       <div class="row">
-      	<div class="col-lg-10 col-lg-offset-1">
-      	
-  <div class="pull-right"><a href="#contact" data-toggle="modal" data-type="host" class="host btn btn-primary btn-large">Want to host a training?</a></div>
-     
-      	</div>
-      </div>
-      <div class="row">
-      	<div class="col-lg-10 col-lg-offset-1">
-
-      	<div id="content_card">
-      	
-      	  <!-- end header-->
-       
-               <h1>Trainings</h1>
-       
-
-               <div class="thumbnail"><img src="{{ site.root_url }}/img/photos/texas_training.jpg" alt="Trainer Selene talking finance with P100 Trainees in Texas"/></div>
-              
-                <h2>Finance Training</h2>
-       
-               <p>Our finance training teaches the fundamentals of campaign finance work for any level, from local and state to federal races. Through exercises, we learn how to write a finance plan, research donors, run effective call time, file compliance reports, organize successful fundraising events and more!</p>
-       
-       
-       <h2>Field trainings</h2>
-       
-               <p>Our field training is also appropriate for any level, from local and state to federal. We learn how to calculate win numbers and target voters effectively, write a field plan, write a call script, manage data, manage volunteers and more! Most importantly, we teach the best practices that we've developed over the years through our own work, and that we've learned from our allies.</p>
-               
-
-       
-       
-        <h2>Upcoming Trainings</h2>
-        <ul class="training_list clearfix row">  
-						
-						{% for training in site.trainings %}
-						 <li class="col-lg-3 col-md-4 col-sm-6"><a href="{{ site.root_url }}/apply/?action_session={{ training.name }}"><h4 class="training_date">{{ training.date }}</h4>
-						<p class="training_location">{{ training.location }}</p>
-						<p class="training_type">{{ training.type}}</p></a>
-						</li>
-						{% endfor %}  
-        </ul>
+  <div class="container">
+	  <!-- Main hero unit for a primary marketing message or call to action -->
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+      	<div class="pull-right">
+      	  <a href="#contact" data-toggle="modal" data-type="host" class="host btn btn-primary btn-large">Want to host a training?</a>
         </div>
-      	</div>
+     	</div>
+    </div>
+    <div class="row">
+     	<div class="col-lg-10 col-lg-offset-1">
+      	<div id="content_card">
+          <h1>Trainings</h1>
+          <div class="thumbnail">
+            <img src="{{ site.root_url }}/img/photos/texas_training.jpg" alt="Trainer Selene talking finance with P100 Trainees in Texas"/>
+          </div>
+          
+          <h2>Finance Training</h2>
+       
+          <p>Our finance training teaches the fundamentals of campaign finance work for any level, from local and state to federal races. Through exercises, we learn how to write a finance plan, research donors, run effective call time, file compliance reports, organize successful fundraising events and more!</p>
+       
+       
+          <h2>Field trainings</h2>
+       
+          <p>Our field training is also appropriate for any level, from local and state to federal. We learn how to calculate win numbers and target voters effectively, write a field plan, write a call script, manage data, manage volunteers and more! Most importantly, we teach the best practices that we've developed over the years through our own work, and that we've learned from our allies.</p>
+               
+          <h2>Upcoming Trainings</h2>
+          <ul class="training_list clearfix row">  
+            {% for training in site.trainings %}
+            <li class="col-lg-3 col-md-4 col-sm-6">
+              <a href="{{ site.root_url }}/apply/?action_session={{ training.name }}">
+                <h4 class="training_date">{{ training.date }}</h4>
+                <p class="training_location">{{ training.location }}</p>
+                <p class="training_type">{{ training.type}}</p>
+              </a>
+            </li>
+            {% endfor %}  
+          </ul>
+        </div>
       </div>
     </div>
+  </div>
+</div>
