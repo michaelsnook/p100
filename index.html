@@ -1,6 +1,31 @@
 ---
 layout: base
 description:
+images: 
+ - src: /img/photos/photo8.png
+   alt: Photo of P100 alumni Christine Bartlett-Josie
+   desc: The training allowed me to connect with a fantastic group of people who I plan to keep in touch with and see where our careers take us. Maybe 10 years from now all of us campaigners will be PCCC trained!
+   foot: &mdash; Christine Bartlett-Josie, Connecticut
+ - src: /img/photos/photo9.png
+   alt:Photo of P100 alumni Jeff Howard
+   desc: Having completed nearly an entire degree in political management, I found the P100 training actually taught me more hands-on, applied lessons than I would ever have learned in school.
+   foot: &mdash; Jeff Howard
+ - src:/img/photos/photo3.png
+   alt: Photo of P100 alumni Lindsay Pollard
+   desc: A co-worker told me to get involved in politics because I was always talking about it. I said, 'That's not something you can just do, you have to know people.' Turns out, I was wrong; change can be made by people like me. P100 taught me how.
+   foot: &mdash; Lindsay Pollard, Florida
+ - src: /img/photos/photo12.png
+   alt: P100 Alumni
+ - src: /img/photos/photo10.png
+   alt: P100 Alumni
+ - src: /img/photos/photo13.png
+   alt: P100 Alumni
+ - src: /img/photos/photo14.png
+   alt: P100 Alumni
+ - src: /img/photos/photo15.png
+   alt: P100 Alumni
+ - src: /img/photos/photo16.png
+   alt: P100 Alumni
 ---
     
 <div class="welcome">
@@ -52,104 +77,18 @@ We're looking for folks who want to change the world. Are you one of them?</p>
 </div>
 </div>
 <div class="container">
-
-
 <div id="photo_grid" class="row">
+  {% for image in images %}
   <div class="col-lg-4 col-md-4 col-sm-12">
     <div class="thumbnail">
-
-    
-      <img src="{{ site.root_url }}/img/photos/photo8.png" alt="Photo of P100 alumni Christine Bartlett-Josie" />
-    
-	          		 <blockquote><p>The training allowed me to connect with a fantastic group of people who I plan to keep in touch with and see where our careers take us. Maybe 10 years from now all of us campaigners will be PCCC trained!</p>
-		<footer>&mdash; Christine Bartlett-Josie, Connecticut</footer>
-	          		 </blockquote>       
-    </div>
-
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-12">
-    <div class="thumbnail">
-    
-           <img src="{{ site.root_url }}/img/photos/photo9.png" alt="Photo of P100 alumni Jeff Howard" />
-    
-     	   <blockquote><p>Having completed nearly an entire degree in political management, I found the P100 training actually taught me more hands-on, applied lessons than I would ever have learned in school.</p>
-		<footer>&mdash; Jeff Howard</footer>
-	</blockquote>          
-
+      <img src="{{ site.root_url }}{{ image.src }}" alt="{{ image.alt }}" />
+      {% if image.desc %}
+      <blockquote>
+        <p>{{ image.desc }}</p>
+        <footer>{{ image.foot }}</footer>
+      </blockquote>       
     </div>
   </div>
-  <div class="col-lg-4 col-md-4 ">
-   <div class="thumbnail">
-            <img src="{{ site.root_url }}/img/photos/photo3.png" alt="Photo of P100 alumni Lindsay Pollard" />
-     <blockquote>
-  <p>A co-worker told me to get involved in politics because I was always talking about it. I said, 'That's not something you can just do, you have to know people.' Turns out, I was wrong; change can be made by people like me. P100 taught me how.</p>  
-		  <footer>&mdash; Lindsay Pollard, Florida</footer>
-	</blockquote>
-        
-	          
-
-          
-   </div>
-  </div>
-  
-  
-   <div class="col-lg-4 col-md-4 ">
-   <div class="thumbnail">
-    
-            <img src="{{ site.root_url }}/img/photos/photo12.png" alt="P100 Alumni"/>
-    
-          
-   </div>
-  </div>
-  
-     <div class="col-lg-4 col-md-4 ">
-   <div class="thumbnail">
-    
-            <img src="{{ site.root_url }}/img/photos/photo10.png" alt="P100 Alumni"/>
-    
-          
-   </div>
-  </div>
-  
-     <div class="col-lg-4 col-md-4 ">
-   <div class="thumbnail">
-    
-            <img src="{{ site.root_url }}/img/photos/photo13.png" alt="P100 Alumni"/>
-    
-          
-   </div>
-  </div>
-
-
-
-   <div class="col-lg-4 col-md-4 ">
-   <div class="thumbnail">
-    
-            <img src="{{ site.root_url }}/img/photos/photo14.png" alt="P100 Alumni"/>
-    
-          
-   </div>
-  </div>
-  
-     <div class="col-lg-4 col-md-4 ">
-   <div class="thumbnail">
-    
-            <img src="{{ site.root_url }}/img/photos/photo15.png" alt="P100 Alumni"/>
-    
-          
-   </div>
-  </div>
-  
-     <div class="col-lg-4 col-md-4 ">
-   <div class="thumbnail">
-    
-            <img src="{{ site.root_url }}/img/photos/photo16.png" alt="P100 Alumni"/>
-    
-          
-   </div>
-  </div>
-
-
-
+  {% endfor %}
 </div>
 </div>
