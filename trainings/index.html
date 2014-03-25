@@ -127,7 +127,7 @@ description:
                <h1>Trainings</h1>
        
 
-               <div class="thumbnail"><img src="/img/photos/texas_training.jpg" alt="Trainer Selene talking finance with P100 Trainees in Texas"/></div>
+               <div class="thumbnail"><img src="{{ site.root_url }}/img/photos/texas_training.jpg" alt="Trainer Selene talking finance with P100 Trainees in Texas"/></div>
               
                 <h2>Finance Training</h2>
        
@@ -145,7 +145,7 @@ description:
         <ul class="training_list clearfix row">  
 						
 						{% for training in site.trainings %}
-						 <li class="col-lg-3 col-md-4 col-sm-6"><a href="/apply/?action_session={{ training.name }}"><h4 class="training_date">{{ training.date }}</h4>
+						 <li class="col-lg-3 col-md-4 col-sm-6"><a href="{{ site.root_url }}/apply/?action_session={{ training.name }}"><h4 class="training_date">{{ training.date }}</h4>
 						<p class="training_location">{{ training.location }}</p>
 						<p class="training_type">{{ training.type}}</p></a>
 						</li>
