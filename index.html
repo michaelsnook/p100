@@ -170,7 +170,7 @@ P100 graduates work on progressive campaigns locally and nationally, and stay co
 <p>
 We're looking for folks who want to change the world. Are you one of them?</p>
         <p class="p100_actions">
-        <a href="/apply/" class="btn btn-primary btn-large">Apply Today</a>
+        <a href="{{ site.root_url }}/apply/" class="btn btn-primary btn-large">Apply Today</a>
         <a href="#contact" data-toggle="modal" data-type="hire-grad" class="btn btn-primary btn-large">Hire a Grad</a>
         </p>
         </div>
@@ -179,7 +179,7 @@ We're looking for folks who want to change the world. Are you one of them?</p>
         
         <ul>	
           {% for training in site.trainings %}
-          <li><a href="/apply/?action_session={{ training.name }}"><h4 class="training_date">{{ training.date }}</h4>
+          <li><a href="{{ site.root_url }}/apply/?action_session={{ training.name }}"><h4 class="training_date">{{ training.date }}</h4>
 						<p class="training_location">{{ training.location }}</p>
 						<p class="training_type">{{ training.type }}</p></a>
 					</li>
