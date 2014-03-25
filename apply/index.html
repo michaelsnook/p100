@@ -184,189 +184,60 @@ layout: base
 		<form class="ak-form" name="act" id="p100_applicant" method="POST" action="javascript:submitForm('p100_applicant', 'p100_app');" accept-charset="utf-8">
 	<!-- begin user_form_wrapper.html -->
 
-<div class="row">
+  <div class="row">
 
-<div class="col-lg-6 col-md-6">
-
+    <div class="col-lg-6 col-md-6">
 			<ul class="compact" class="ak-errors" style="display:none"></ul>
 			<div id="unknown_user" class="user-form ak-labels-overlaid ak-errs-below">
-					
-		<div class="row">
-  <div class="col-lg-12 col-md-12">
-    <input type="text" class="form-control" name="first_name" id="id_first_name" placeholder="first name" />
-  </div>
-		</div>
-		<div class="row">
-  <div class="col-lg-12 col-md-12">
-    <input type="text" class="form-control" name="last_name" id="id_last_name" placeholder="last name" />
-  </div>
-		</div>
-  
-  <div class="row">
-  <div class="col-lg-6 col-md-6">
-	  <input type="text" class="form-control" name="phone" class="phone" id="id_phone" placeholder="phone" />
-  </div>
-  
-  <div class="col-lg-6 col-md-6">
-	  <input type="text" class="form-control" name="zip" class="required" id="zip" placeholder="zip code" />
-  </div>
-  </div>
-  
-  <div class="row">
-  <div class="col-lg-12 col-md-12">
-   <input type="text" class="form-control" name="email" class="required" id="email" placeholder="e-mail address" />
-  </div>
-  
-</div>		</div>
-
-</div>
+			  <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <input type="text" class="form-control" name="first_name" id="id_first_name" placeholder="first name" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <input type="text" class="form-control" name="last_name" id="id_last_name" placeholder="last name" />
+          </div>
+        </div> 
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <input type="text" class="form-control" name="phone" class="phone" id="id_phone" placeholder="phone" />
+          </div>  
+          <div class="col-lg-6 col-md-6">
+            <input type="text" class="form-control" name="zip" class="required" id="zip" placeholder="zip code" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <input type="text" class="form-control" name="email" class="required" id="email" placeholder="e-mail address" />
+          </div>
+        </div>
+  		</div>
+    </div>
 		<div id="survey-questions" class="col-lg-6 col-md-6">		
-			
+
 				<p>Which Sessions would you like to apply for?</p>
+				  {% for training in site.trainings %}
+					<div class="session">
+  					<label for="{{ training.name }}">							
+  					<input type="checkbox" class="vis-hidden" name="action_session" id="id_{{ training.name }}" value="{{ training.name }}" />
+ 						<div class="training_info">
+  						<p class="training_date">{{ training.date }}</p>
+  						<p class="training_location">{{ training.location }}</p>
+  						<p class="training_type">{{ training.type }}</p>
+ 						</div>
+  					</label>
+					</div>
+					{% endfor %}
 				
 					<div class="session">
-					<label for="id_la_april_field">							
-					<input type="checkbox" class="vis-hidden" name="action_session" id="id_la_april_field" value="la_april_field" />
-						<div class="training_info">
-						<p class="training_date">April 5-6, 2014</p>
-						<p class="training_location">Baton Rouge, LA</p>
-						<p class="training_type">Field Training</p>
-						</div>
-					</label>
-					</div>
-					
-				<div class="session">
-					<label for="id_dc_april_candidate">							
-					<input type="checkbox" class="vis-hidden" name="action_session" id="id_dc_april_candidate" value="dc_april_candidate" />
-						<div class="training_info">
-						<p class="training_date">April 7-8, 2014</p>
-						<p class="training_location">Washington, DC</p>
-						<p class="training_type">Candidate Training</p>
-						</div>
-					</label>
-					</div>
-
-					<div class="session">
-					<label for="id_ca_april_fin">							
-					<input type="checkbox" class="vis-hidden" name="action_session" id="id_ca_april_fin" value="ca_april_fin" />
-						<div class="training_info">
-						<p class="training_date">April 12-13, 2014</p>
-						<p class="training_location">Los Angeles, CA</p>
-						<p class="training_type">Finance Training</p>
-						</div>
-					</label>
-					</div>
-
-					<div class="session">
-					<label for="id_ia_april_fin">							
-					<input type="checkbox" class="vis-hidden" name="action_session" id="id_ia_april_fin" value="ia_april_fin" />
-						<div class="training_info">
-						<p class="training_date">April 26-27, 2014</p>
-						<p class="training_location">Waterloo, IA</p>
-						<p class="training_type">Finance Training</p>
-						</div>
-					</label>
-					</div>
-					
-				<div class="session">
-					<label for="id_co_may_field">							
-					<input type="checkbox" class="vis-hidden" name="action_session" id="id_co_may_field" value="co_may_field" />
-						<div class="training_info">
-						<p class="training_date">May 3-4, 2014</p>
-						<p class="training_location">Denver, CO</p>
-						<p class="training_type">Field Training</p>
-						</div>
-					</label>
-					</div>
-					
-										<div class="session">
-					<label for="id_fl_may_fin">							
-					<input type="checkbox" class="vis-hidden" name="action_session" id="id_fl_may_fin" value="fl_may_fin" />
-						<div class="training_info">
-						<p class="training_date">May 10-11, 2014</p>
-						<p class="training_location">Orlando, FL</p>
-						<p class="training_type">Finance Training</p>
-						</div>
-					</label>
-					</div>
-					
-				<div class="session">
-					<label for="id_pa_may_fin">							
-					<input type="checkbox" class="vis-hidden" name="action_session" id="id_pa_may_fin" value="pa_may_fin" />
-						<div class="training_info">
-						<p class="training_date">May 24-25, 2014</p>
-						<p class="training_location">Philadelphia, PA</p>
-						<p class="training_type">Finance Training</p>
-						</div>
-					</label>
-					</div>
-				
-				<div class="session">
-					<label for="id_me_may_fin">							
-					<input type="checkbox" class="vis-hidden" name="action_session" id="id_me_may_fin" value="me_may_fin" />
-						<div class="training_info">
-						<p class="training_date">May 30, 2014</p>
-						<p class="training_location">Maine</p>
-						<p class="training_type">Finance Training</p>
-						</div>
-					</label>
-					</div>
-				
-          <div class="session">
-					<label for="id_ca_june_field">							
-					<input type="checkbox" class="vis-hidden" name="action_session" id="id_ca_june_field" value="ca_june_field" />
-						<div class="training_info">
-						<p class="training_date">June 7-8, 2014</p>
-						<p class="training_location">Los Angeles, CA</p>
-						<p class="training_type">Field Training</p>
-						</div>
-					</label>
-					</div>
-				
-          <div class="session">
-					<label for="id_co_june_fin">							
-					<input type="checkbox" class="vis-hidden" name="action_session" id="id_co_june_fin" value="co_june_fin" />
-						<div class="training_info">
-						<p class="training_date">June 21-22, 2014</p>
-						<p class="training_location">Denver, CO</p>
-						<p class="training_type">Finance Training</p>
-						</div>
-					</label>
-					</div>
-				
-				<div class="session">
-					<label for="id_sd_june_field">							
-					<input type="checkbox" class="vis-hidden" name="action_session" id="id_sd_june_field" value="sd_june_field" />
-						<div class="training_info">
-						<p class="training_date">June 28-29, 2014</p>
-						<p class="training_location">South Dakota</p>
-						<p class="training_type">Field Training</p>
-						</div>
-					</label>
-					</div>
-					
-				<div class="session">
-					<label for="id_me_july_field">							
-					<input type="checkbox" class="vis-hidden" name="action_session" id="id_me_july_field" value="me_july_field" />
-						<div class="training_info">
-						<p class="training_date">July 12-13, 2014</p>
-						<p class="training_location">Maine</p>
-						<p class="training_type">Field Training</p>
-						</div>
-					</label>
-					</div>
-				
-					<div class="session">
-					
-					
-					<label for="id_recieve_updates">	
-					<input type="checkbox" class="vis-hidden" name="action_session" id="id_recieve_updates" value="recieve_updates" />								<div class="training_info">
-						<p class="future_session">Interested in Future Sessions</p>
-					</div>						
-					</label>
-					</div>
-					
-					
+  					<label for="id_recieve_updates">	
+  					<input type="checkbox" class="vis-hidden" name="action_session" id="id_recieve_updates" value="recieve_updates" />
+    					<div class="training_info">
+    						<p class="future_session">Interested in Future Sessions</p>
+    					</div>						
+  					</label>
+					</div>					
 			</div>
 			
 		</div>
@@ -433,5 +304,3 @@ layout: base
       	</div>
       </div>
     </div>
-
-</html>
